@@ -76314,7 +76314,16 @@ video {
 }
 
 .package-info {
-  font-family: 'IRANSansXFaNum demiBold';
+  font-family: 'IRANSansXFaNum demi-bold';
   color: #464646;
 }
 
+/* Profiles */
+
+.profile-img {
+  box-shadow: 0 0 15px 0 rgba(77, 77, 77, 0.3);
+}
+
+.profile-name {
+  font-family: 'IRANSansXFaNum extra-bold';
+}
