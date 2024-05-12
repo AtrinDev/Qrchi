@@ -60,22 +60,18 @@
 
 .btn {
     font-family: 'IRANSansXFaNum light';
-    background-color: #EBC156;
-}
-
-.span {
-    background-color: #EDDB90;
+    /* background-color: #EBC156; */
 }
 
 .secondary-btn {
     font-family: 'IRANSansXFaNum light';
-    color: #EBC156;
+    /* color: #EBC156; */
     border-bottom: 3px solid #EBC156;
 }
 
 .title-name {
     font-family: 'IRANSansXFaNum extra-bold';
-    color: #333333;
+    /* color: #333333; */
 }
 
 .title-underline {
@@ -88,7 +84,7 @@
 
 .nav-links {
     font-family: 'IRANSansXFaNum regular';
-    color: #4D4D4D;
+    /* color: #4D4D4D; */
 }
 
 .hero-bg {
@@ -101,18 +97,18 @@
 
 .hero-info h1 {
     font-family: 'IRANSansXFaNum black';
-    color: #57380F;
+    /* color: #57380F; */
 }
 
 .hero-info h5 {
     font-family: 'IRANSansXFaNum bold';
-    color: #333333;
+    /* color: #333333; */
 }
 
 .hero-info p {
     font-family: 'IRANSansXFaNum regular';
     line-height: 32px;
-    color: #666666;
+    /* color: #666666; */
 }
 
 /* Services */
@@ -122,13 +118,13 @@
 }
 .service-title {
     font-family: 'IRANSansXFaNum bold';
-    color: #333333;
+    /* color: #333333; */
 }
 
 .service-desc {
     font-family: 'IRANSansXFaNum medium';
     line-height: 24px!important;
-    color: #464646;
+    /* color: #464646; */
 }
 
 /* Packages */
@@ -189,12 +185,12 @@
 
 .upper-package p {
     font-family: 'IRANSansXFaNum black';
-    color: #464646;
+    /* color: #464646; */
 }
 
 .upper-package h3 {
     font-family: 'IRANSansXFaNum black';
-    color: #464646;
+    /* color: #464646; */
 }
 
 .lower-package-1 {
@@ -251,20 +247,94 @@
 
 .package-list {
     font-family: 'IRANSansXFaNum regular';
-    color: #666666;
+    /* color: #666666; */
 }
 
 .package-info {
     font-family: 'IRANSansXFaNum demi-bold';
-    color: #464646;
+    /* color: #464646; */
 }
 
 /* Profiles */
 
-.profile-img {
-    box-shadow: 0 0 15px 0 rgba(77, 77, 77, 0.3);
-}
-
 .profile-name {
     font-family: 'IRANSansXFaNum extra-bold';
+}
+
+/* FAQ */
+
+.faq-question {
+    font-family: 'IRANSansXFaNum bold';
+}
+
+.single-faq {
+    box-shadow: 0 0 16px 0 rgba(77, 77, 77, 0.15);
+    border-left: 7px solid #E2A350;
+    border-right: 7px solid #E2A350;
+    width: 588px;
+}
+
+.faq-answer {
+    font-family: 'IRANSansXFaNum regular';
+    font-size: 14px;
+    line-height: 32px;
+}
+
+/* Order */
+
+.order-info {
+    width: 460px;
+}
+
+.order-info h2 {
+    font-family: 'IRANSansXFaNum extra-bold';
+}
+
+.order-info p {
+    font-family: 'IRANSansXFaNum regular';
+}
+
+.order-img {
+    background: url(../assets/images/Mobile\ Bg.png) no-repeat center center;
+}
+
+.blog-card {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.blog-info h6 {
+    font-family: 'IRANSansXFaNum extra-bold';
+}
+
+.blog-info p {
+    font-family: 'IRANSansXFaNum regular';
+    line-height: 28px;
+}
+
+/* Footer */
+
+.footer-col-1 h5 {
+    font-family: 'IRANSansXFaNum extra-bold';
+}
+
+.footer-col-1 p {
+    font-family: 'IRANSansXFaNum regular';
+    line-height: 32px;
+    width: 400px;
+}
+
+.footer-col-2 p {
+    font-family: 'IRANSansXFaNum regular';
+}
+
+.footer-title {
+    font-family: 'IRANSansXFaNum extra-bold';
+}
+
+.footer-col-3 {
+    font-family: 'IRANSansXFaNum medium';
+}
+
+.footer-links {
+    font-family: 'IRANSansXFaNum demi-bold';
 }
