@@ -298,6 +298,8 @@
     background: url(../assets/images/Mobile\ Bg.png) no-repeat center center;
 }
 
+/* Blogs */
+
 .blog-card {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
 }
@@ -337,4 +339,12 @@
 
 .footer-links {
     font-family: 'IRANSansXFaNum demi-bold';
+}
+
+.footer-bg {
+    background: url('../assets/images/Footer-Bg-1.png') right no-repeat;
+}
+
+.footer-bg-2 {
+    background: url('../assets/images/Footer-Bg-2.png') right no-repeat;
 }
