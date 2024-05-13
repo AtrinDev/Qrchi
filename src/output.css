@@ -76143,7 +76143,7 @@ video {
 }
 
 .hero-bg {
-  background-image: url('../assets/images/Hero\ Bg.png');
+  background: url('../assets/images/Hero\ Bg.png');
 }
 
 .hero-bg-2 {
@@ -76357,6 +76357,8 @@ video {
   background: url(../assets/images/Mobile\ Bg.png) no-repeat center center;
 }
 
+/* Blogs */
+
 .blog-card {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
 }
@@ -76379,7 +76381,7 @@ video {
 .footer-col-1 p {
   font-family: 'IRANSansXFaNum regular';
   line-height: 32px;
-  width: 400px;
+  width: 370px;
 }
 
 .footer-col-2 p {
@@ -76396,4 +76398,13 @@ video {
 
 .footer-links {
   font-family: 'IRANSansXFaNum demi-bold';
+}
+
+.footer-bg {
+  background: url('../assets/images/Footer-Bg-1.png') right no-repeat;
+  height: 410px;
+}
+
+.footer-bg-2 {
+  background: url('../assets/images/Footer-Bg-2.png') bottom left no-repeat;
 }

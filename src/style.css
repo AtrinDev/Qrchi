@@ -88,7 +88,7 @@
 }
 
 .hero-bg {
-    background-image: url('../assets/images/Hero\ Bg.png');
+    background: url('../assets/images/Hero\ Bg.png');
 }
 
 .hero-bg-2 {
@@ -322,7 +322,7 @@
 .footer-col-1 p {
     font-family: 'IRANSansXFaNum regular';
     line-height: 32px;
-    width: 400px;
+    width: 370px;
 }
 
 .footer-col-2 p {
@@ -343,8 +343,9 @@
 
 .footer-bg {
     background: url('../assets/images/Footer-Bg-1.png') right no-repeat;
+    height: 410px;
 }
 
 .footer-bg-2 {
-    background: url('../assets/images/Footer-Bg-2.png') right no-repeat;
+    background: url('../assets/images/Footer-Bg-2.png') bottom left no-repeat;
 }
