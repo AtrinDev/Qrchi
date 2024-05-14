@@ -80,6 +80,8 @@
     /* background-color: #E9BC49; */
 }
 
+/* ----------Home---------- */
+
 /* Header */
 
 .nav-links {
@@ -194,45 +196,16 @@
 }
 
 .lower-package-1 {
-    border: linear-gradient(to left,#DFDFDF, #A2A2A2);
-    border-width: 8px;
-    border-style: solid;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-}
+    border-color:#A2A2A2;
+    
+} 
 
 .lower-package-2 {
-    border: linear-gradient(to left,#F7EB9B, #BE8D3D);
-    border-width: 8px;
-    border-style: solid;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    border-color:#BE8D3D;
 }
 
 .lower-package-3 {
-    border: linear-gradient(to left,#9FCBE5, #3290C5);
-    border-width: 8px;
-    border-style: solid;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    border-color:#3290C5;
 }
 
 .package-1-btn {
@@ -349,3 +322,53 @@
 .footer-bg-2 {
     background: url('../assets/images/Footer-Bg-2.png') bottom left no-repeat;
 }
+
+/* ----------End of Home---------- */
+
+
+/* ----------Packages---------- */
+
+.navbar-bg {
+    background: url('../assets/images/Navbar-Bg.png') top no-repeat;
+}
+
+.page-title-h3 {
+    font-family: 'IRANSansXFaNum black';
+}
+
+.page-title-p {
+    font-family: 'IRANSansXFaNum demi-bold';
+}
+
+/* ----------End of Packages---------- */
+
+
+/* ----------Order---------- */
+
+.form-label {
+    font-family: 'IRANSansXFaNum demi-bold';
+}
+
+.form-input {
+    box-shadow: 0 0 16px 0 rgba(77, 77, 77, 0.15);
+    border-left: 7px solid #E2A350;
+    border-right: 7px solid #E2A350;
+    width: 588px;
+}
+
+.form-input::placeholder {
+    font-family: 'IRANSansXFaNum regular';
+    font-size: 18px;
+    color: #B3B3B3;
+}
+
+.form-select {
+    font-family: 'IRANSansXFaNum regular';
+    color: #B3B3B3;
+}
+
+.not-found-title {
+    font-family: 'IRANSansXFaNum bold';
+}
+
+/* ----------End of Order---------- */

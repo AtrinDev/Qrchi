@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Qrchi qr code qrcode.png">
+    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Order</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="h-40 navbar-bg">
+        <section class="max-w-7xl mx-auto py-4 flex justify-between items-center sticky top-0 z-10">
+            <img src="./assets/images/Qr Chi.png" class="w-16">
+            <div>
+                <button id="mobile-open-button" class="text-3xl sm:hidden mr-72 focus:outline-none nav-links">
+                    &#9776;
+                </button>
+                <nav class="hidden sm:block lg:space-x-8 text-lg ml-72 mr-20"> 
+                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:pl-8 nav-links">
+                        خانه
+                    </a>
+                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
+                        پکیج ها
+                    </a>
+                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
+                        تماس با ما
+                    </a>
+                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
+                        درباره ما
+                    </a>
+                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
+                        نمونه پروفایل ها
+                    </a>
+                </nav>
+            </div>
+                <i class="fab fa-sistrix ml-2 text-grayScale-700"></i>
+                <div class="flex sm:flex-row lg:justify-between lg:block">
+                    <div class="w-full h-20 flex items-center justify-center">
+                        <a href="#_"
+                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                            <span
+                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                            <span
+                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                            <span class="relative z-20 flex items-center text-sm">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                                </path>
+                                </svg>
+                                ثبت سفارش
+                            </span>
+                        </a>
+                    </div>
+                </div>
+        </section>
+    </header>
+    <section class="flex justify-center items-center">
+        <div id="flex flex-col justify-center items-center mt-8">
+            <h3 class="text-4xl text-primary-400 text-center page-title-h3">ثبت سفارش</h3>   
+            <p class="text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html" class="text-primary-800">خانه</a> /  ثبت سفارش</p>
+        </div>
+    </section>
+
+    <!-- End of Header -->
+
+    <!-- Order Form -->
+
+    <section class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-24 mb-14">
+            <form action="" class="flex flex-col sm:flex-row justify-between">
+                    <div class="flex flex-col">
+                        <label for="name" class="text-lg text-primary-400 form-label">نام و نام خانوادگی</label>
+                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="نام و نام خانوادگی">
+                        <!-- <i class="fas fa-user"></i> -->
+                    </div>
+                    <div class="flex flex-col phone-input">
+                        <label for="phone" class="text-lg text-primary-400 form-label">شماره تماس</label>
+                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="شماره تماس">
+                        <!-- <i class="fas fa-phone"></i> -->
+                    </div>
+            </form>
+            <form action="" class="flex flex-col sm:flex-row justify-between mt-14">
+                    <div class="flex flex-col">
+                        <label for="site" class="text-lg text-primary-400 form-label">آدرس سایت</label>
+                        <input type="url" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="آدرس سایت">
+                        <!-- <i class="fas fa-globe"></i> -->
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="instagram" class="text-lg text-primary-400 form-label">اینستاگرام</label>
+                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="اینستاگرام">
+                        <!-- <i class="fab fa-instagram-square"></i> -->
+                    </div>
+            </form>
+            <form action="" class="flex flex-col sm:flex-row justify-between mt-14">
+                    <div class="flex flex-col">
+                        <label for="package" class="text-lg text-primary-400 form-label">انتخاب پکیج</label>
+                        <select class="px-6 py-4 rounded-xl mt-4 text-lg focus:outline-none focus:border-amber-600 focus:shadow-lg form-input form-select">
+                            <option class="text-sm text-grayScale-800">انتخاب پکیج</option>
+                            <option value="" class="text-sm text-grayScale-800">پکیج نقره ای</option>
+                            <option value="" class="text-sm text-grayScale-800">پکیج طلایی</option>
+                            <option value="" class="text-sm text-grayScale-800">پکیج پلاتینیومی</option>
+                        </select>
+                        <!-- <i class="fas fa-check"></i> -->
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="name" class="text-lg text-primary-400 form-label">حوزه فعالیت</label>
+                        <input type="job" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="حوزه فعالیت">
+                        <!-- <i class="fas fa-briefcase"></i> -->
+                    </div>
+            </form>
+            <form action="" class="flex flex-col sm:flex-row justify-center mt-16">
+                    <div class="flex flex-col">
+                        <label for="package" class="text-lg text-primary-400 form-label">توضیحات</label>
+                        <textarea type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="توضیحات" rows="5"></textarea>
+                        <!-- <i class="fas fa-bars"></i> -->
+                    </div>
+            </form>
+            <div class="w-full h-20 flex items-center justify-center mt-14">
+                <a href="#_"
+                    class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                    <span
+                        class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                    <span
+                        class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                    <span class="relative z-20 flex items-center text-sm">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                        </path>
+                        </svg>
+                        ارسال درخواست
+                    </span>
+                </a>
+            </div>
+    </section>
+
+    <!-- End of Order Form -->
+
+    <!-- Footer -->
+
+    <div class="footer-bg"></div>
+    <footer id="footer" class="-mt-80 footer-bg-2">
+        <section class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto">
+            <section class="mt-16 flex flex-col sm:flex-row justify-betweena items-center sm:gap-48">
+                <div class="flex flex-col footer-col-1">
+                    <img src="./assets/images/Qrchi qr code qrcode.PNG" alt="footer logo" class="w-14">
+                    <h5 class="text-xl text-grayScale-800 mt-8">همه وقت، همه جا، همه چی</h5>
+                    <p class="text-base text-justify text-grayScale-700 mt-4">کیو.آر.چی تجربه ای متفاوت از Qr-Code را برای شما رقم می زند.
+                        مخاطبین شما با استفاده از کد کیو.آر.چی دقیقا همان چیزی را
+                        می بینند که شما می خواهید دیده شود.</p>
+                </div>
+                <div class="flex flex-col text-2xl gap-6 footer-col-2">
+                    <h5 class="text-grayScale-800 footer-title">
+                        ارتباط با ما
+                    </h5>
+                    <span class="flex flex-row justify-center items-center gap-6">
+                        <span class="w-11 h-11 bg-grayScale-700 rounded-full flex justify-center items-center">
+                            <i class="fas fa-mobile text-grayScale-0"></i>
+                        </span>
+                        <p class="text-grayScale-700 text-lg">09338365886</p>
+                    </span>
+                    <span class="flex flex-row justify-start items-center gap-6">
+                        <span class="w-11 h-11 bg-grayScale-700 rounded-full flex justify-center items-center">
+                            <i class="fab fa-instagram-square text-grayScale-0"></i>
+                        </span>
+                        <p class="text-grayScale-700 text-lg">qr.chi@</p>
+                    </span>
+                </div>
+                <div class="flex flex-col text-2xl gap-6 footer-col-3">
+                    <h5 class="text-grayScale-800 footer-title">
+                        مقالات
+                    </h5>
+                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
+                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
+                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
+                </div>
+            </section>
+            <hr class="bg-grayScale-500 mt-20">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <img src="./assets/images/Mavaranet-Logo.png" alt="mavaranet logo" class="my-4">
+                <ul class="flex flex-row footer-links text-grayScale-800 my-4">
+                    <li class="px-4"><a href="#">پکیج ها</a></li>
+                    <p class="text-primary-500">|</p>
+                    <li class="px-4"><a href="#">پروفایل ها</a></li>
+                    <p class="text-primary-500">|</p>
+                    <li class="pr-4"><a href="#">مقالات</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <!-- End of Footer -->
+    
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
