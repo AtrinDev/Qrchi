@@ -71,50 +71,64 @@
     <section class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-24 mb-14">
             <form action="" class="flex flex-col sm:flex-row justify-between">
                     <div class="flex flex-col">
-                        <label for="name" class="text-lg text-primary-400 form-label">نام و نام خانوادگی</label>
-                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="نام و نام خانوادگی">
-                        <!-- <i class="fas fa-user"></i> -->
+                        <span class="flex flex-row items-center gap-4">
+                            <i class="fas fa-user text-primary-400 text-xl"></i>
+                            <label for="name" class="text-lg text-primary-400 form-label">نام و نام خانوادگی</label>
+                        </span>
+                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 form-input" placeholder="نام و نام خانوادگی">
                     </div>
                     <div class="flex flex-col phone-input">
-                        <label for="phone" class="text-lg text-primary-400 form-label">شماره تماس</label>
-                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="شماره تماس">
-                        <!-- <i class="fas fa-phone"></i> -->
+                        <span class="flex flex-row items-center gap-4">
+                            <i class="fas fa-phone text-primary-400 text-xl"></i>
+                            <label for="phone" class="text-lg text-primary-400 form-label">شماره تماس</label>
+                        </span>
+                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 form-input" placeholder="شماره تماس">
                     </div>
             </form>
             <form action="" class="flex flex-col sm:flex-row justify-between mt-14">
                     <div class="flex flex-col">
-                        <label for="site" class="text-lg text-primary-400 form-label">آدرس سایت</label>
-                        <input type="url" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="آدرس سایت">
-                        <!-- <i class="fas fa-globe"></i> -->
+                        <span class="flex flex-row items-center gap-4">
+                            <i class="fas fa-globe text-primary-400 text-xl"></i>
+                            <label for="site" class="text-lg text-primary-400 form-label">آدرس سایت</label>
+                        </span>
+                        <input type="url" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 form-input" placeholder="آدرس سایت">
                     </div>
                     <div class="flex flex-col">
-                        <label for="instagram" class="text-lg text-primary-400 form-label">اینستاگرام</label>
-                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="اینستاگرام">
-                        <!-- <i class="fab fa-instagram-square"></i> -->
+                        <span class="flex flex-row items-center gap-4">
+                            <i class="fab fa-instagram-square text-primary-400 text-xl"></i>
+                            <label for="instagram" class="text-lg text-primary-400 form-label">اینستاگرام</label>
+                        </span>
+                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 form-input" placeholder="اینستاگرام">
                     </div>
             </form>
             <form action="" class="flex flex-col sm:flex-row justify-between mt-14">
                     <div class="flex flex-col">
-                        <label for="package" class="text-lg text-primary-400 form-label">انتخاب پکیج</label>
-                        <select class="px-6 py-4 rounded-xl mt-4 text-lg focus:outline-none focus:border-amber-600 focus:shadow-lg form-input form-select">
+                        <span class="flex flex-row items-center gap-4">
+                            <i class="fas fa-check text-primary-400 text-xl"></i>
+                            <label for="package" class="text-lg text-primary-400 form-label">انتخاب پکیج</label>
+                        </span>
+                            <select class="px-6 py-4 rounded-xl mt-4 text-lg focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 form-input">
                             <option class="text-sm text-grayScale-800">انتخاب پکیج</option>
-                            <option value="" class="text-sm text-grayScale-800">پکیج نقره ای</option>
-                            <option value="" class="text-sm text-grayScale-800">پکیج طلایی</option>
-                            <option value="" class="text-sm text-grayScale-800">پکیج پلاتینیومی</option>
+                            <option value="silver" class="text-sm text-grayScale-800">پکیج نقره ای</option>
+                            <option value="gold" class="text-sm text-grayScale-800">پکیج طلایی</option>
+                            <option value="platinum" class="text-sm text-grayScale-800">پکیج پلاتینیومی</option>
                         </select>
-                        <!-- <i class="fas fa-check"></i> -->
                     </div>
                     <div class="flex flex-col">
-                        <label for="name" class="text-lg text-primary-400 form-label">حوزه فعالیت</label>
-                        <input type="job" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="حوزه فعالیت">
-                        <!-- <i class="fas fa-briefcase"></i> -->
+                        <span class="flex flex-row items-center gap-4">
+                            <i class="fas fa-briefcase text-primary-400 text-xl"></i>
+                            <label for="name" class="text-lg text-primary-400 form-label">حوزه فعالیت</label>
+                        </span>
+                        <input type="job" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 form-input" placeholder="حوزه فعالیت">
                     </div>
             </form>
             <form action="" class="flex flex-col sm:flex-row justify-center mt-16">
                     <div class="flex flex-col">
-                        <label for="package" class="text-lg text-primary-400 form-label">توضیحات</label>
-                        <textarea type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg form-input" placeholder="توضیحات" rows="5"></textarea>
-                        <!-- <i class="fas fa-bars"></i> -->
+                        <span class="flex flex-row items-center gap-4">
+                            <i class="fas fa-bars text-primary-400 text-xl"></i>
+                            <label for="package" class="text-lg text-primary-400 form-label">توضیحات</label>
+                        </span>
+                        <textarea type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 form-input resize-none" placeholder="توضیحات" rows="5"></textarea>
                     </div>
             </form>
             <div class="w-full h-20 flex items-center justify-center mt-14">
