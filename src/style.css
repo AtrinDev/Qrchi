@@ -113,6 +113,16 @@
     /* color: #666666; */
 }
 
+/* .navbar-fixed {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+} */
+
 /* Services */
 
 .service {
@@ -153,26 +163,6 @@
     position: relative;
 }
 
-.upper-package::after {
-    position: absolute;
-    content: url(../assets/images/Crown\ Icon-1.png);
-    top: -22%;
-    left: 35%;
-}
-
-.upper-package-2::after {
-    position: absolute;
-    content: url(../assets/images/Crown\ Icon-2.png);
-    top: -22%;
-    left: 35%;
-}
-
-.upper-package-3::after {
-    position: absolute;
-    content: url(../assets/images/Crown\ Icon-3.png);
-    top: -22%;
-    left: 35%;
-}
 .upper-package-1 {
     background: url(../assets/images/Qrcode.png) no-repeat, linear-gradient(-100deg,#9A9A9A, #DADADA, #9A9A9A);
 }
@@ -271,6 +261,34 @@
     background: url(../assets/images/Mobile\ Bg.png) no-repeat center center;
 }
 
+.mobiles {
+    animation: mobile 8s 1s infinite;
+    -webkit-animation: mobile 8s 1s infinite;
+}
+
+@keyframes mobile {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+    50% {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+}
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+}
 /* Blogs */
 
 .blog-card {
@@ -373,3 +391,16 @@
 }
 
 /* ----------End of Order---------- */
+
+
+/* ----------Blog---------- */
+
+.blog-heading {
+    font-family: 'IRANSansXFaNum extra-bold';
+}
+
+.blog-text {
+    font-family: 'IRANSansXFaNum regular';
+}
+
+/* ----------End of Blog---------- */
