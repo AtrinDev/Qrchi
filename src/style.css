@@ -113,7 +113,7 @@
     /* color: #666666; */
 }
 
-/* .navbar-fixed {
+.navbar-fixed {
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -121,7 +121,7 @@
     width: 100%;
     z-index: 100;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-} */
+}
 
 /* Services */
 

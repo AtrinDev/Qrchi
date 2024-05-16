@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Qrchi qr code qrcode.png">
     <link rel="stylesheet" href="fontAwesome/css/all.min.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/output.css">
     <title>Qrchi</title>
 </head>
+
 <body class="backdrop-blur-3xl">
 
     <!-- Header -->
 
-    <header id="header" class="min-h-screen bg-no-repeat bg-left-top bg-contain hero-bg">
-        <section id="nav" class="max-w-7xl mx-auto py-4 flex justify-between items-center sticky top-0 z-10">
-            <a href="index.html"><img src="./assets/images/Qr Chi.png" class="w-16"></a>
-            <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden mr-72 focus:outline-none nav-links">
-                    &#9776;
-                </button>
-                <nav class="hidden sm:block lg:space-x-8 text-lg ml-72 mr-20"> 
-                    <a href="#" class="text-grayScale-700 hover:text-gray-500 font-black sm:pl-8 nav-links">
-                        خانه
-                    </a>
-                    <a href="packages.html" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
-                        پکیج ها
-                    </a>
-                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
-                        تماس با ما
-                    </a>
-                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
-                        درباره ما
-                    </a>
-                    <a href="profiles.html" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
-                        نمونه پروفایل ها
-                    </a>
-                </nav>
+    <section id="nav" class="max-w-7xl mx-auto py-4 flex justify-between items-center sticky top-0 z-10">
+        <a href="index.html"><img src="./assets/images/Qr Chi.png" class="w-16"></a>
+        <div>
+            <button id="mobile-open-button" class="text-3xl sm:hidden mr-72 focus:outline-none nav-links">
+                &#9776;
+            </button>
+            <nav class="hidden sm:block lg:space-x-8 text-lg ml-72 mr-20">
+                <a href="#" class="text-grayScale-700 hover:text-gray-500 font-black sm:pl-8 nav-links">
+                    خانه
+                </a>
+                <a href="packages.html" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
+                    پکیج ها
+                </a>
+                <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
+                    تماس با ما
+                </a>
+                <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
+                    درباره ما
+                </a>
+                <a href="profiles.html" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
+                    نمونه پروفایل ها
+                </a>
+            </nav>
+        </div>
+        <i class="fab fa-sistrix ml-2 text-grayScale-700"></i>
+        <div class="flex sm:flex-row lg:justify-between lg:block">
+            <div class="w-full h-20 flex items-center justify-center">
+                <a href="order.html"
+                    class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                    <span
+                        class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                    <span
+                        class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                    <span class="relative z-20 flex items-center text-sm">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z">
+                        </path>
+                        </svg>
+                        ثبت سفارش
+                    </span>
+                </a>
             </div>
-                <i class="fab fa-sistrix ml-2 text-grayScale-700"></i>
-                <div class="flex sm:flex-row lg:justify-between lg:block">
-                    <div class="w-full h-20 flex items-center justify-center">
-                        <a href="order.html"
-                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
-                            <span
-                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                            <span
-                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                            <span class="relative z-20 flex items-center text-sm">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
-                                </path>
-                                </svg>
-                                ثبت سفارش
-                            </span>
-                        </a>
-                    </div>
-                </div>
-        </section>
+        </div>
+    </section>
+    <header id="header" class="min-h-screen -mt-28 bg-no-repeat bg-left-top bg-contain hero-bg">
         <section class="hero-bg-2">
-            <section id="hero" class="max-w-7xl mx-auto flex flex-col items-center mb-12 sm:flex-row">
+            <section id="hero" class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center mb-12">
                 <div>
                     <img src="./assets/images/Hero illustration.png" alt="Mobile" class="absolute top-10 left-28">
                 </div>
-                <div class="pt-12 hero-info">
+                <div class="pt-12 sm:mt-28 hero-info">
                     <h1 class="text-4xl sm:mb-10 text-primary-800">کیوآرچی</h1>
                     <h5 class="text-xl sm:mb-8 text-grayScale-800">همه وقت، همه جا، همه چی</h5>
-                    <p class="text-base max-w-lg sm:mb-10 text-justify text-grayScale-600">کیو.آر.چی تجربه ای متفاوت از Qr-Code را برای شما رقم می زند.
+                    <p class="text-base max-w-lg sm:mb-10 text-justify text-grayScale-600">کیو.آر.چی تجربه ای متفاوت از
+                        Qr-Code را برای شما رقم می زند.
                         مخاطبین شما با استفاده از کد کیو.آر.چی دقیقا همان چیزی را
                         می بینند که شما می خواهید دیده شود.</p>
-                    <p class="text-base max-w-lg sm:mb-10 text-justify -mt-4 text-grayScale-600">کیوآرکد اختصاصی این امکان را برای شما فراهم می کند تا
+                    <p class="text-base max-w-lg sm:mb-10 text-justify -mt-4 text-grayScale-600">کیوآرکد اختصاصی این
+                        امکان را برای شما فراهم می کند تا
                         با یک اسکن ساده دسترسی به نظرسنجی، شبکه‌های اجتماعی، وبسایت،
                         کاتالوگ محصولات، اطلاعات تماس و ... به راحتی در اختیار کاربران و مراجعین شما قرار بگیرد.</p>
                     <div class="flex sm:flex-row">
@@ -89,13 +91,15 @@
                                     پکیج ها
                                 </span>
                             </a>
-                            <a href="profiles.html" class="w-36 rounded-md sm:mr-8 secondary-btn text-secondary-500 flex justify-center items-center">نمونه پروفایل ها</a>
+                            <a href="profiles.html"
+                                class="w-36 rounded-md sm:mr-8 secondary-btn text-secondary-500 flex justify-center items-center">نمونه
+                                پروفایل ها</a>
                         </div>
                     </div>
             </section>
         </section>
     </header>
-    
+
     <!-- End of Header -->
 
     <!-- Services -->
@@ -106,33 +110,41 @@
             <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
         </div>
         <section class="mt-16 flex flex-col sm:flex-row items-center gap-6">
-            <div class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/40 px-5 py-4 rounded-3xl backdrop-blur-xl hover:-mt-10 transition-all ease-in-out service">
+            <div
+                class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/40 px-5 py-4 rounded-3xl backdrop-blur-xl hover:-mt-10 transition-all ease-in-out service">
                 <span class="flex flex-row items-center">
                     <img src="./assets/images/Service-Icon-1.png" alt="service icon">
                     <h6 class="text-base mr-6 service-title text-grayScale-800">طراحی لندینگ کیوارکد</h6>
                 </span>
-                <p class="text-xs mt-5 text-justify service-desc text-grayScale-600">ما برای شما یک طراحی خاص انجام می دهیم. برای ما مهم است که شما طراحی اختصاصی خود را دوست داشته باشید.</p>
+                <p class="text-xs mt-5 text-justify service-desc text-grayScale-600">ما برای شما یک طراحی خاص انجام می
+                    دهیم. برای ما مهم است که شما طراحی اختصاصی خود را دوست داشته باشید.</p>
             </div>
-            <div class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/40 px-5 py-4 rounded-3xl backdrop-blur-xl hover:-mt-10 transition-all ease-in-out service">
+            <div
+                class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/40 px-5 py-4 rounded-3xl backdrop-blur-xl hover:-mt-10 transition-all ease-in-out service">
                 <span class="flex flex-row items-center">
                     <img src="./assets/images/Service-Icon-2.png" alt="service icon">
                     <h6 class="text-base mr-6 service-title text-grayScale-800">کارت هوشمند NFC</h6>
                 </span>
-                <p class="text-xs mt-5 text-justify service-desc text-grayScale-600">جدیدترین تکنولوژی در دستان شما، کارت NFC را به گوشی مخاطب خود نزدیک می کنید و اطلاعات به او نمایش داده می شود.</p>
+                <p class="text-xs mt-5 text-justify service-desc text-grayScale-600">جدیدترین تکنولوژی در دستان شما،
+                    کارت NFC را به گوشی مخاطب خود نزدیک می کنید و اطلاعات به او نمایش داده می شود.</p>
             </div>
-            <div class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/40 px-5 py-4 rounded-3xl backdrop-blur-xl hover:-mt-10 transition-all ease-in-out service">
+            <div
+                class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/40 px-5 py-4 rounded-3xl backdrop-blur-xl hover:-mt-10 transition-all ease-in-out service">
                 <span class="flex flex-row items-center">
                     <img src="./assets/images/Service-Icon-3.png" alt="service icon">
                     <h6 class="text-base mr-6 service-title text-grayScale-800">استند کیوارکد</h6>
                 </span>
-                <p class="text-xs mt-5 text-justify service-desc text-grayScale-600">استند رومیزی پیشنهاد ما برای محل کار شما، برند خود را در معرض دید مخاطبین قرار دهید. مقاوم، به صرفه و کاربردی.</p>
+                <p class="text-xs mt-5 text-justify service-desc text-grayScale-600">استند رومیزی پیشنهاد ما برای محل
+                    کار شما، برند خود را در معرض دید مخاطبین قرار دهید. مقاوم، به صرفه و کاربردی.</p>
             </div>
-            <div class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/40 px-5 py-4 rounded-3xl backdrop-blur-xl hover:-mt-10 transition-all ease-in-out service">
+            <div
+                class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/40 px-5 py-4 rounded-3xl backdrop-blur-xl hover:-mt-10 transition-all ease-in-out service">
                 <span class="flex flex-row items-center">
                     <img src="./assets/images/Service-Icon-4.png" alt="service icon">
                     <h6 class="text-base mr-6 service-title text-grayScale-800">کارت Qrcode</h6>
                 </span>
-                <p class="text-xs mt-5 text-justify service-desc text-grayScale-600">کارت ویزیت خود را به یک پل ارتباطی تبدیل کنید. طراحی و چاپ کارت ویزیت کیوآرکد با سریع ترین و بهترین کیفیت چاپ برای شما.</p>
+                <p class="text-xs mt-5 text-justify service-desc text-grayScale-600">کارت ویزیت خود را به یک پل ارتباطی
+                    تبدیل کنید. طراحی و چاپ کارت ویزیت کیوآرکد با سریع ترین و بهترین کیفیت چاپ برای شما.</p>
             </div>
         </section>
     </section>
@@ -147,9 +159,11 @@
             <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
         </div>
         <section class="mt-24 flex flex-col sm:flex-row justify-between items-center Packages">
-            <div class="w-2/3 sm:w-auto flex flex-col rounded-2xl backdrop-blur-xl transition-all ease-in-out hover:scale-105 package-1">
+            <div
+                class="w-2/3 sm:w-auto flex flex-col rounded-2xl backdrop-blur-xl transition-all ease-in-out hover:scale-105 package-1">
                 <div class="text-center px-12 pt-16 pb-9 rounded-t-2xl relative upper-package upper-package-1">
-                    <span class="w-20 h-20 bg-grayScale-200 rounded-full flex justify-center items-center shadow-xl absolute -top-10 left-[150px]">
+                    <span
+                        class="w-20 h-20 bg-grayScale-200 rounded-full flex justify-center items-center shadow-xl absolute -top-10 left-[150px]">
                         <img src="./assets/images/Crown-icon.png" alt="icon">
                     </span>
                     <p class="text-lg pb-12 text-grayScale-900">پکیج نقره ای</p>
@@ -170,7 +184,8 @@
                             <span
                                 class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
                             <span class="relative z-20 flex items-center text-sm">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z">
                                 </path>
                                 </svg>
                                 انتخاب پکیج
@@ -179,13 +194,15 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/3 sm:w-auto flex flex-col rounded-2xl backdrop-blur-xl transition-all ease-in-out hover:scale-105 package-2">
+            <div
+                class="w-2/3 sm:w-auto flex flex-col rounded-2xl backdrop-blur-xl transition-all ease-in-out hover:scale-105 package-2">
                 <div class="text-center px-16 pt-16 pb-9 rounded-t-2xl upper-package upper-package-2">
-                    <span class="w-20 h-20 bg-[#E0C474] rounded-full flex justify-center items-center shadow-xl absolute -top-10 left-[155px]">
+                    <span
+                        class="w-20 h-20 bg-[#E0C474] rounded-full flex justify-center items-center shadow-xl absolute -top-10 left-[155px]">
                         <img src="./assets/images/Crown-icon.png" alt="icon">
                     </span>
                     <p class="text-lg pb-12">پکیج طلایی</p>
-                    <h3 class="text-4xl">3.600.000  تومان</h3>
+                    <h3 class="text-4xl">3.600.000 تومان</h3>
                 </div>
                 <div class="px-4 py-9 text-center border-b-8 rounded-2xl lower-package-2">
                     <ul class="pb-10 package-list text-grayScale-600">
@@ -204,7 +221,8 @@
                             <span
                                 class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
                             <span class="relative z-20 flex items-center text-sm">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z">
                                 </path>
                                 </svg>
                                 انتخاب پکیج
@@ -213,13 +231,15 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/3 sm:w-auto flex flex-col rounded-2xl backdrop-blur-xl transition-all ease-in-out hover:scale-105 package-3">
+            <div
+                class="w-2/3 sm:w-auto flex flex-col rounded-2xl backdrop-blur-xl transition-all ease-in-out hover:scale-105 package-3">
                 <div class="text-center px-4 pt-16 pb-9 rounded-t-2xl upper-package upper-package-3">
-                    <span class="w-20 h-20 bg-[#91CCEE] rounded-full flex justify-center items-center shadow-xl absolute -top-10 left-[150px]">
+                    <span
+                        class="w-20 h-20 bg-[#91CCEE] rounded-full flex justify-center items-center shadow-xl absolute -top-10 left-[150px]">
                         <img src="./assets/images/Crown-icon.png" alt="icon">
                     </span>
                     <p class="text-lg pb-12">پکیج پلاتینیومی</p>
-                    <h3 class="text-4xl">5.200.000  تومان</h3>
+                    <h3 class="text-4xl">5.200.000 تومان</h3>
                 </div>
                 <div class="px-7 pt-9 pb-6 text-center border-b-8 rounded-2xl lower-package-3">
                     <ul class="pb-10 package-list text-grayScale-600">
@@ -239,7 +259,8 @@
                             <span
                                 class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
                             <span class="relative z-20 flex items-center text-sm">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z">
                                 </path>
                                 </svg>
                                 انتخاب پکیج
@@ -312,7 +333,7 @@
                     <img src="./assets/images/12.png" alt="profile" class="transition-all hover:scale-105 profile-img">
                     <h5 class="text-xl text-center text-grayScale-800 mt-10 profile-name">دکتر علی الستی</h5>
                 </div>
-                
+
             </div>
         </section>
     </section>
@@ -329,27 +350,38 @@
         <section class="mt-16 flex flex-col sm:flex-row justify-between items-center">
             <img src="./assets/images/FAQ Illustration.png" alt="faq">
             <div class="flex flex-col gap-6">
-                <div class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl single-faq collapse-header collapse-item active">
+                <div
+                    class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl single-faq collapse-header collapse-item active">
                     <div class="flex flex-row justify-between pb-5">
                         <h4 class="text-grayScale-800 faq-question">تفاوت کیوارچی و سرویس های رایگان مشابه چیه؟</h4>
                         <i class="fas fa-angle-up text-xl text-grayScale-800"></i>
                     </div>
-                    <p class="text-grayScale-600 text-justify faq-answer">در زمان استفاده از کیوآرکد سرویس های رایگان شما با چاپ کیوآرکد و استفاده های تبلیغاتی هزینه خواهید کرد اما پس از مدتی سرویس قطع خواهد شد و جهت ادامه سرویس تعرفه ی اشتراک دلاری و یا هزینه های ریالی سنگین برای شما مطرح خواهد شد که با توجه به محدودیت های پرداختی و مسائل تحریم های بین المللی به طور کل ما سرویس های خارجی و رایگان را پیشنهاد نمی کنیم. کیوآرچی از ابتدا با یک شرایط شفاف سرویس را به شما ارائه می دهد و با دریافت هزینه ها معقول خدمات را با کیفیت بالا ارائه می دهد.</p>
+                    <p class="text-grayScale-600 text-justify faq-answer">در زمان استفاده از کیوآرکد سرویس های رایگان
+                        شما با چاپ کیوآرکد و استفاده های تبلیغاتی هزینه خواهید کرد اما پس از مدتی سرویس قطع خواهد شد و
+                        جهت ادامه سرویس تعرفه ی اشتراک دلاری و یا هزینه های ریالی سنگین برای شما مطرح خواهد شد که با
+                        توجه به محدودیت های پرداختی و مسائل تحریم های بین المللی به طور کل ما سرویس های خارجی و رایگان
+                        را پیشنهاد نمی کنیم. کیوآرچی از ابتدا با یک شرایط شفاف سرویس را به شما ارائه می دهد و با دریافت
+                        هزینه ها معقول خدمات را با کیفیت بالا ارائه می دهد.</p>
                 </div>
                 <div class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl single-faq">
                     <div class="flex flex-row justify-between pb-5">
                         <h4 class="text-grayScale-800 faq-question">چرا سرویس مورد نظر را از کیوارچی‌ تهیه کنم؟</h4>
                         <i class="fas fa-angle-up text-xl text-grayScale-800"></i>
                     </div>
-                    <p class="text-grayScale-600 text-justify faq-answer">دپارتمان کیوارچی با پشتوانه ی هولدینگ فعال در حوزه های آنلاین در همه ی زمینه‌های طراحی گرافیکی و برنامه نویسی با بیش از پانزده سال سابقه در برنامه نویسی و طراحی سایت بالاترین سطح خدمات و پشتیبانی ۲۴ ساعته سرویس را برای شما رقم خواهد زد.</p>
+                    <p class="text-grayScale-600 text-justify faq-answer">دپارتمان کیوارچی با پشتوانه ی هولدینگ فعال در
+                        حوزه های آنلاین در همه ی زمینه‌های طراحی گرافیکی و برنامه نویسی با بیش از پانزده سال سابقه در
+                        برنامه نویسی و طراحی سایت بالاترین سطح خدمات و پشتیبانی ۲۴ ساعته سرویس را برای شما رقم خواهد زد.
+                    </p>
                 </div>
                 <div class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl single-faq">
                     <div class="flex flex-row justify-between pb-5">
                         <h4 class="text-grayScale-800 faq-question">اطلاعات پروفایل کیوارکد قابل تغییره؟</h4>
                         <i class="fas fa-angle-up text-xl text-grayScale-800"></i>
                     </div>
-                    <p class="text-grayScale-600 text-justify faq-answer">بله تمام اطلاعات طراحی ها و محتوای کیوآرکد شما هر لحظه قابل ویرایش هست.
-                        با تغییر ادرس، شماره، آدرس اینستاگرام و وبسایت یا ویرایش کاتالوگ محصولات، کیوارکد هم برای شما به روز میشود.</p>
+                    <p class="text-grayScale-600 text-justify faq-answer">بله تمام اطلاعات طراحی ها و محتوای کیوآرکد شما
+                        هر لحظه قابل ویرایش هست.
+                        با تغییر ادرس، شماره، آدرس اینستاگرام و وبسایت یا ویرایش کاتالوگ محصولات، کیوارکد هم برای شما به
+                        روز میشود.</p>
                 </div>
             </div>
         </section>
@@ -363,8 +395,11 @@
         <section class="mt-16 flex flex-col sm:flex-row justify-between items-center">
             <div class="flex flex-col text-justify order-info">
                 <h2 class="text-grayScale-800 text-3xl mb-6">کیو آر چی ویترین مجازی شما</h2>
-                <p class="text-grayScale-600 text-base">کیوآرکد اختصاصی این امکان را برای شما فراهم می کند تا با یک اسکن ساده دسترسی به نظرسنجی، شبکه‌های اجتماعی، وبسایت، کاتالوگ محصولات، اطلاعات تماس و ... به راحتی در اختیار کاربران و مراجعین شما قرار بگیرد.</p>
-                <p class="text-grayScale-600 text-base mb-10">چاپ 1000 کارت کیوآرکد 680/000 تومان و استند کیوآرکد 480/000 تومان</p>
+                <p class="text-grayScale-600 text-base">کیوآرکد اختصاصی این امکان را برای شما فراهم می کند تا با یک اسکن
+                    ساده دسترسی به نظرسنجی، شبکه‌های اجتماعی، وبسایت، کاتالوگ محصولات، اطلاعات تماس و ... به راحتی در
+                    اختیار کاربران و مراجعین شما قرار بگیرد.</p>
+                <p class="text-grayScale-600 text-base mb-10">چاپ 1000 کارت کیوآرکد 680/000 تومان و استند کیوآرکد
+                    480/000 تومان</p>
                 <p class="text-grayScale-600 text-base mb-10">همین حالا کیو آر کد خود را سفارش دهید.</p>
                 <div class="w-full h-20 flex items-center">
                     <a href="order.html"
@@ -374,7 +409,8 @@
                         <span
                             class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                         <span class="relative z-20 flex items-center text-sm">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z">
                             </path>
                             </svg>
                             ثبت سفارش
@@ -393,87 +429,96 @@
     <!-- Blogs -->
 
     <section id="blogs" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-24 mb-14">
-            <div class="mx-auto flex flex-col items-center title">
-                <h1 class="title-name text-xl text-grayScale-800">آخرین مقالات</h1>
-                <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
-            </div>
-            <section class="mt-16 flex flex-col sm:flex-row justify-between items-center gap-6">
-                <div class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/30 pb-4 rounded-3xl backdrop-blur-xl transition-all ease-in-out hover:shadow-xl blog-card">
-                    <a href="single-blog.html">
-                        <img src="./assets/images/blog-img.jpg" alt="blog image" class="rounded-t-2xl">
+        <div class="mx-auto flex flex-col items-center title">
+            <h1 class="title-name text-xl text-grayScale-800">آخرین مقالات</h1>
+            <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
+        </div>
+        <section class="mt-16 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div
+                class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/30 pb-4 rounded-3xl backdrop-blur-xl transition-all ease-in-out hover:shadow-xl blog-card">
+                <a href="single-blog.html">
+                    <img src="./assets/images/blog-img.jpg" alt="blog image" class="rounded-t-2xl">
                     <span class="flex flex-col px-4 blog-info">
                         <h6 class="text-lg blog-title text-primary-500 pt-4">عنوان مقاله</h6>
-                        <p class="text-sm text-justify blog-desc text-grayScale-600 pt-3">لورم ایپسوم متن تست لورم تست ایپسوم لورم ایپسوم متن تست لورم ایپسوم لورم 
+                        <p class="text-sm text-justify blog-desc text-grayScale-600 pt-3">لورم ایپسوم متن تست لورم تست
+                            ایپسوم لورم ایپسوم متن تست لورم ایپسوم لورم
                             لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
                     </span>
                     <span class="flex justify-end pl-4">
                         <span class="w-8 h-8 bg-primary-500 rounded-full flex justify-center items-center mt-3">
                             <i class="fas fa-arrow-left text-grayScale-0 flex justify-start"></i>
                         </span>
-                    </span>
-                    </a>
-                </div>
-                <div class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/30 pb-4 rounded-3xl backdrop-blur-xl transition-all ease-in-out hover:shadow-xl blog-card">
-                    <a href="single-blog.html">
-                        <img src="./assets/images/blog-img.jpg" alt="blog image" class="rounded-t-2xl">
-                    <span class="flex flex-col px-4 blog-info">
-                        <h6 class="text-lg blog-title text-primary-500 pt-4">عنوان مقاله</h6>
-                        <p class="text-sm text-justify blog-desc text-grayScale-600 pt-3">لورم ایپسوم متن تست لورم تست ایپسوم لورم ایپسوم متن تست لورم ایپسوم لورم 
-                            لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
-                    </span>
-                    <span class="flex justify-end pl-4">
-                        <span class="w-8 h-8 bg-primary-500 rounded-full flex justify-center items-center mt-3">
-                            <i class="fas fa-arrow-left text-grayScale-0 flex justify-start"></i>
-                        </span>
-                    </span>
-                    </a>
-                </div>
-                <div class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/30 pb-4 rounded-3xl backdrop-blur-xl transition-all ease-in-out hover:shadow-xl blog-card">
-                    <a href="single-blog.html">
-                        <img src="./assets/images/blog-img.jpg" alt="blog image" class="rounded-t-2xl">
-                    <span class="flex flex-col px-4 blog-info">
-                        <h6 class="text-lg blog-title text-primary-500 pt-4">عنوان مقاله</h6>
-                        <p class="text-sm text-justify blog-desc text-grayScale-600 pt-3">لورم ایپسوم متن تست لورم تست ایپسوم لورم ایپسوم متن تست لورم ایپسوم لورم 
-                            لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
-                    </span>
-                    <span class="flex justify-end pl-4">
-                        <span class="w-8 h-8 bg-primary-500 rounded-full flex justify-center items-center mt-3">
-                            <i class="fas fa-arrow-left text-grayScale-0 flex justify-start"></i>
-                        </span>
-                    </span>
-                    </a>
-                </div>
-                <div class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/30 pb-4 rounded-3xl backdrop-blur-xl transition-all ease-in-out hover:shadow-xl blog-card">
-                    <a href="single-blog.html">
-                        <img src="./assets/images/blog-img.jpg" alt="blog image" class="rounded-t-2xl">
-                    <span class="flex flex-col px-4 blog-info">
-                        <h6 class="text-lg blog-title text-primary-500 pt-4">عنوان مقاله</h6>
-                        <p class="text-sm text-justify blog-desc text-grayScale-600 pt-3">لورم ایپسوم متن تست لورم تست ایپسوم لورم ایپسوم متن تست لورم ایپسوم لورم 
-                            لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
-                    </span>
-                    <span class="flex justify-end pl-4">
-                        <span class="w-8 h-8 bg-primary-500 rounded-full flex justify-center items-center mt-3">
-                            <i class="fas fa-arrow-left text-grayScale-0 flex justify-start"></i>
-                        </span>
-                    </span>
-                    </a>
-                </div>
-            </section>
-            <div class="w-full h-20 flex justify-center items-center mt-16">
-                <a href="blogs.html"
-                    class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
-                    <span
-                        class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                    <span
-                        class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                    <span class="relative z-20 flex items-center text-sm">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
-                        </path>
-                        </svg>
-                        مشاهده بیشتر 
                     </span>
                 </a>
             </div>
+            <div
+                class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/30 pb-4 rounded-3xl backdrop-blur-xl transition-all ease-in-out hover:shadow-xl blog-card">
+                <a href="single-blog.html">
+                    <img src="./assets/images/blog-img.jpg" alt="blog image" class="rounded-t-2xl">
+                    <span class="flex flex-col px-4 blog-info">
+                        <h6 class="text-lg blog-title text-primary-500 pt-4">عنوان مقاله</h6>
+                        <p class="text-sm text-justify blog-desc text-grayScale-600 pt-3">لورم ایپسوم متن تست لورم تست
+                            ایپسوم لورم ایپسوم متن تست لورم ایپسوم لورم
+                            لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
+                    </span>
+                    <span class="flex justify-end pl-4">
+                        <span class="w-8 h-8 bg-primary-500 rounded-full flex justify-center items-center mt-3">
+                            <i class="fas fa-arrow-left text-grayScale-0 flex justify-start"></i>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div
+                class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/30 pb-4 rounded-3xl backdrop-blur-xl transition-all ease-in-out hover:shadow-xl blog-card">
+                <a href="single-blog.html">
+                    <img src="./assets/images/blog-img.jpg" alt="blog image" class="rounded-t-2xl">
+                    <span class="flex flex-col px-4 blog-info">
+                        <h6 class="text-lg blog-title text-primary-500 pt-4">عنوان مقاله</h6>
+                        <p class="text-sm text-justify blog-desc text-grayScale-600 pt-3">لورم ایپسوم متن تست لورم تست
+                            ایپسوم لورم ایپسوم متن تست لورم ایپسوم لورم
+                            لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
+                    </span>
+                    <span class="flex justify-end pl-4">
+                        <span class="w-8 h-8 bg-primary-500 rounded-full flex justify-center items-center mt-3">
+                            <i class="fas fa-arrow-left text-grayScale-0 flex justify-start"></i>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div
+                class="w-2/3 sm:w-1/4 flex flex-col bg-[white]/30 pb-4 rounded-3xl backdrop-blur-xl transition-all ease-in-out hover:shadow-xl blog-card">
+                <a href="single-blog.html">
+                    <img src="./assets/images/blog-img.jpg" alt="blog image" class="rounded-t-2xl">
+                    <span class="flex flex-col px-4 blog-info">
+                        <h6 class="text-lg blog-title text-primary-500 pt-4">عنوان مقاله</h6>
+                        <p class="text-sm text-justify blog-desc text-grayScale-600 pt-3">لورم ایپسوم متن تست لورم تست
+                            ایپسوم لورم ایپسوم متن تست لورم ایپسوم لورم
+                            لورم ایپسوم لورم ایپسوم لورم ایپسوم</p>
+                    </span>
+                    <span class="flex justify-end pl-4">
+                        <span class="w-8 h-8 bg-primary-500 rounded-full flex justify-center items-center mt-3">
+                            <i class="fas fa-arrow-left text-grayScale-0 flex justify-start"></i>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <div class="w-full h-20 flex justify-center items-center mt-16">
+            <a href="blogs.html"
+                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                <span
+                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                <span
+                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                <span class="relative z-20 flex items-center text-sm">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z">
+                    </path>
+                    </svg>
+                    مشاهده بیشتر
+                </span>
+            </a>
+        </div>
     </section>
 
     <!-- End of Blogs -->
@@ -487,7 +532,8 @@
                 <div class="flex flex-col footer-col-1">
                     <img src="./assets/images/Qrchi qr code qrcode.PNG" alt="footer logo" class="w-14">
                     <h5 class="text-xl text-grayScale-800 mt-8">همه وقت، همه جا، همه چی</h5>
-                    <p class="text-base text-justify text-grayScale-700 mt-4">کیو.آر.چی تجربه ای متفاوت از Qr-Code را برای شما رقم می زند.
+                    <p class="text-base text-justify text-grayScale-700 mt-4">کیو.آر.چی تجربه ای متفاوت از Qr-Code را
+                        برای شما رقم می زند.
                         مخاطبین شما با استفاده از کد کیو.آر.چی دقیقا همان چیزی را
                         می بینند که شما می خواهید دیده شود.</p>
                 </div>
@@ -535,21 +581,30 @@
 
     <!-- Blur Bgs -->
 
-    <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[15%] right-[-10%] blur-3xl"></div>
-    <div class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[15%] left-[7%] blur-3xl rotate-[30deg]"></div>
-    <div class="w-[445px] h-[723px] bg-secondary-500/10 rounded-full absolute -z-10 top-[19%] left-[35%] blur-3xl"></div>
+    <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[15%] right-[-10%] blur-3xl">
+    </div>
+    <div
+        class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[15%] left-[7%] blur-3xl rotate-[30deg]">
+    </div>
+    <div class="w-[445px] h-[723px] bg-secondary-500/10 rounded-full absolute -z-10 top-[19%] left-[35%] blur-3xl">
+    </div>
     <div class="w-[652px] h-[606px] bg-secondary-500/10 rounded-full absolute -z-10 top-[32%] left-[5%] blur-3xl"></div>
-    <div class="w-[728px] h-[735px] bg-secondary-500/10 rounded-full absolute -z-10 top-[34%] right-[-20%] blur-3xl"></div>
+    <div class="w-[728px] h-[735px] bg-secondary-500/10 rounded-full absolute -z-10 top-[34%] right-[-20%] blur-3xl">
+    </div>
     <div class="w-[640px] h-[640px] bg-secondary-500/10 rounded-full absolute -z-10 top-[53%] left-[8%] blur-3xl"></div>
-    <div class="w-[530px] h-[926px] bg-secondary-500/10 rounded-full absolute -z-10 top-[63%] right-[-15%] blur-3xl"></div>
-    <div class="w-[403px] h-[590px] bg-secondary-500/10 rounded-full absolute -z-10 top-[80%] left-[5%] blur-3xl rotate-[10deg]"></div>
+    <div class="w-[530px] h-[926px] bg-secondary-500/10 rounded-full absolute -z-10 top-[63%] right-[-15%] blur-3xl">
+    </div>
+    <div
+        class="w-[403px] h-[590px] bg-secondary-500/10 rounded-full absolute -z-10 top-[80%] left-[5%] blur-3xl rotate-[10deg]">
+    </div>
 
     <!-- End of Blur Bgs -->
-    
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/jquery-3.6.1.slim.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
