@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,17 @@
     <link rel="stylesheet" href="./src/output.css">
     <title>404 Not Found</title>
 </head>
+
 <body class="max-h-screen backdrop-blur-3xl">
 
     <!-- 404 -->
 
-    <section class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-24 flex flex-col justify-center items-center">
-        <img src="./assets/images/404-Image.png" alt="404" class="h-56">
+    <section
+        class="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto mt-24 flex flex-col justify-center items-center">
+        <img src="./assets/images/404-Image.png" alt="404" class="h-20 sm:h-32 md:h-56">
         <div class="flex flex-col justify-center items-center mt-24">
-            <h3 class="text-4xl text-primary-400 not-found-title">صفحه ای یافت نشد!</h3>
-            <ul class="flex flex-row footer-links text-grayScale-800 my-4">
+            <h3 class="text-xl sm:text-2xl md:text-4xl text-primary-400 not-found-title">صفحه ای یافت نشد!</h3>
+            <ul class="flex flex-row footer-links text-grayScale-800 my-8">
                 <li class="px-4"><a href="packages.html">پکیج ها</a></li>
                 <p class="text-primary-500">|</p>
                 <li class="px-4"><a href="profiles.html">پروفایل ها</a></li>
@@ -31,7 +34,8 @@
                     <span
                         class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                     <span class="relative z-20 flex items-center text-sm">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z">
                         </path>
                         </svg>
                         بازگشت به خانه
@@ -43,14 +47,19 @@
 
     <!-- End of 404  -->
 
-        <!-- Blur Bgs -->
+    <!-- Blur Bgs -->
 
-        <div class="w-[403px] h-[543px] bg-secondary-500/20 rounded-full absolute -z-10 top-[-60%] right-[-5%] blur-3xl"></div>
-        <div class="w-[286px] h-[488px] bg-secondary-500/20 rounded-full absolute -z-10 top-[8%] left-[7%] blur-3xl rotate-[30deg]"></div>
-    
-         <!-- End of Blur Bgs -->
-    
-    
+    <div
+        class="w-[403px] h-[543px] bg-secondary-500/20 rounded-full absolute -z-10 max-[640px]:hidden sm:top-[-60%] sm:right-[-5%] blur-3xl">
+    </div>
+    <div
+        class="w-[286px] h-[488px] bg-secondary-500/20 rounded-full absolute -z-10 max-[640px]:hidden top-[8%] left-[7%] blur-3xl rotate-[30deg]">
+    </div>
+
+    <!-- End of Blur Bgs -->
+
+
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>

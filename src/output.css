@@ -76149,7 +76149,7 @@ video {
 }
 
 .hero-bg-2 {
-  background: url('../assets/images/Vector.png') right no-repeat;
+  background: url('../assets/images/Vector.png') right 70% no-repeat;
 }
 
 .hero-info h1 {
@@ -76168,15 +76168,15 @@ video {
   /* color: #666666; */
 }
 
-/* .navbar-fixed {
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-} */
+.navbar-fixed {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
 /* Services */
 
@@ -76373,7 +76373,6 @@ video {
 .footer-col-1 p {
   font-family: 'IRANSansXFaNum regular';
   line-height: 32px;
-  width: 370px;
 }
 
 .footer-col-2 p {
@@ -76393,12 +76392,12 @@ video {
 }
 
 .footer-bg {
-  background: url('../assets/images/Footer-Bg-1.png') right no-repeat;
+  /* background: url('../assets/images/Footer-Bg-1.png') right no-repeat; */
   height: 410px;
 }
 
 .footer-bg-2 {
-  background: url('../assets/images/Footer-Bg-2.png') bottom left no-repeat;
+  /* background: url('../assets/images/Footer-Bg-2.png') bottom left no-repeat; */
 }
 
 /* ----------End of Home---------- */

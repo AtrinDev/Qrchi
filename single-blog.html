@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,59 +9,62 @@
     <link rel="stylesheet" href="./src/output.css">
     <title>Profiles</title>
 </head>
+
 <body class="backdrop-blur-3xl">
 
     <!-- Header -->
 
-    <header class="h-40 navbar-bg">
-        <section class="max-w-7xl mx-auto py-4 flex justify-between items-center sticky top-0 z-10">
+    <header class="h-40 mx-8 navbar-bg">
+        <section class="max-w-7xl sm:mx-auto py-4 flex justify-between items-center sticky top-0 z-10">
             <a href="index.html"><img src="./assets/images/Qr Chi.png" class="w-16"></a>
-            <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden mr-72 focus:outline-none nav-links">
-                    &#9776;
-                </button>
-                <nav class="hidden sm:block lg:space-x-8 text-lg ml-72 mr-20"> 
-                    <a href="index.html" class="text-grayScale-700 hover:text-gray-500 sm:pl-8 nav-links">
-                        خانه
+            <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none nav-links">
+                &#9776;
+            </button>
+            <nav
+                class="hidden sm:block lg:space-x-8 sm:text-xs md:text-[13px] xl:text-lg sm:ml-10 sm:mr-4 lg:mr-18 xl:ml-72 xl:mr-20">
+                <a href="index.html" class="text-grayScale-700 hover:text-gray-500 sm:pl-3 lg:pl-8 nav-links">
+                    خانه
+                </a>
+                <a href="packages.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
+                    پکیج ها
+                </a>
+                <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
+                    تماس با ما
+                </a>
+                <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
+                    درباره ما
+                </a>
+                <a href="profiles.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
+                    نمونه پروفایل ها
+                </a>
+            </nav>
+            <i class="fab fa-sistrix ml-2 hidden sm:block text-grayScale-700"></i>
+            <div class="flex sm:flex-row lg:justify-between hidden sm:block">
+                <div class="w-full h-20 flex items-center justify-center">
+                    <a href="order.html"
+                        class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                        <span
+                            class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                        <span
+                            class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                        <span class="relative z-20 flex items-center text-sm">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z">
+                            </path>
+                            </svg>
+                            ثبت سفارش
+                        </span>
                     </a>
-                    <a href="packages.html" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
-                        پکیج ها
-                    </a>
-                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
-                        تماس با ما
-                    </a>
-                    <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-2 nav-links">
-                        درباره ما
-                    </a>
-                    <a href="profiles.html" class="text-grayScale-700 hover:text-gray-500 font-black sm:px-2 nav-links">
-                        نمونه پروفایل ها
-                    </a>
-                </nav>
-            </div>
-                <i class="fab fa-sistrix ml-2 text-grayScale-700"></i>
-                <div class="flex sm:flex-row lg:justify-between lg:block">
-                    <div class="w-full h-20 flex items-center justify-center">
-                        <a href="order.html"
-                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
-                            <span
-                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                            <span
-                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                            <span class="relative z-20 flex items-center text-sm">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
-                                </path>
-                                </svg>
-                                ثبت سفارش
-                            </span>
-                        </a>
-                    </div>
                 </div>
+            </div>
         </section>
     </header>
     <section class="flex justify-center items-center">
         <div id="flex flex-col justify-center items-center mt-8">
-            <h3 class="text-4xl text-primary-400 text-center page-title-h3">نام مقاله</h3>   
-            <p class="text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html" class="text-primary-800">خانه / <a href="blogs.html">مقالات</a></a> /  نام مقاله</p>
+            <h3 class="text-2xl sm:text-4xl text-primary-400 text-center page-title-h3">نام مقاله</h3>
+            <p class="text-lg sm:text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html"
+                    class="text-primary-800">خانه / <a href="blogs.html" class="text-primary-800">مقالات</a></a> / نام
+                مقاله</p>
         </div>
     </section>
 
@@ -68,16 +72,48 @@
 
     <!-- Blog -->
 
-    <section class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto my-24">
-        <div class="mt-16 flex flex-col justify-end gap-6">
-            <h2 class="text-3xl text-grayScale-800 flex blog-heading">عنوان مقاله عنوان مقاله</h2>
-            <p class="text-base text-grayScale-700 text-justify blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-            <h2 class="text-3xl text-grayScale-800 flex mt-12 blog-heading">عنوان مقاله عنوان مقاله</h2>
-            <p class="text-base text-grayScale-700 text-justify blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-            <h2 class="text-3xl text-grayScale-800 flex mt-12 blog-heading">عنوان مقاله عنوان مقاله</h2>
-            <p class="text-base text-grayScale-700 text-justify blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-            <h2 class="text-3xl text-grayScale-800 flex mt-12 blog-heading">عنوان مقاله عنوان مقاله</h2>
-            <p class="text-base text-grayScale-700 text-justify blog-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+    <section class="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto my-24">
+        <div class="mt-16 mx-8 lg:mx-2 flex flex-col justify-end gap-6">
+            <h2 class="text-xl sm:text-3xl text-grayScale-800 flex blog-heading">عنوان مقاله عنوان مقاله</h2>
+            <p class="text-sm sm:text-base text-grayScale-700 text-justify blog-text">لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم
+                از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به
+                پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                اساسا مورد استفاده قرار گیرد.</p>
+            <h2 class="text-xl sm:text-3xl text-grayScale-800 flex mt-12 blog-heading">عنوان مقاله عنوان مقاله</h2>
+            <p class="text-sm sm:text-base text-grayScale-700 text-justify blog-text">لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم
+                از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به
+                پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                اساسا مورد استفاده قرار گیرد.</p>
+            <h2 class="text-xl sm:text-3xl text-grayScale-800 flex mt-12 blog-heading">عنوان مقاله عنوان مقاله</h2>
+            <p class="text-sm sm:text-base text-grayScale-700 text-justify blog-text">لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم
+                از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به
+                پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                اساسا مورد استفاده قرار گیرد.</p>
+            <h2 class="text-xl sm:text-3xl text-grayScale-800 flex mt-12 blog-heading">عنوان مقاله عنوان مقاله</h2>
+            <p class="text-sm sm:text-base text-grayScale-700 text-justify blog-text">لورم ایپسوم متن ساختگی با تولید
+                سادگی نامفهوم
+                از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+                که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی
+                ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به
+                پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                اساسا مورد استفاده قرار گیرد.</p>
         </div>
     </section>
 
@@ -86,13 +122,15 @@
     <!-- Footer -->
 
     <div class="footer-bg"></div>
-    <footer id="footer" class="-mt-80 footer-bg-2">
-        <section class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto">
-            <section class="mt-16 flex flex-col sm:flex-row justify-betweena items-center sm:gap-48">
-                <div class="flex flex-col footer-col-1">
+    <footer id="footer" class="-mt-80a footer-bg-2">
+        <section class="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+            <section class="mt-16 mx-8 lg:mx-2 flex flex-col sm:flex-row justify-between items-center gap-20 xl:gap-48">
+                <div class="flex flex-col  footer-col-1">
                     <img src="./assets/images/Qrchi qr code qrcode.PNG" alt="footer logo" class="w-14">
                     <h5 class="text-xl text-grayScale-800 mt-8">همه وقت، همه جا، همه چی</h5>
-                    <p class="text-base text-justify text-grayScale-700 mt-4">کیو.آر.چی تجربه ای متفاوت از Qr-Code را برای شما رقم می زند.
+                    <p class="text-base text-justify text-grayScale-700 mt-4 lg:w-[370px]">کیو.آر.چی تجربه ای متفاوت از
+                        Qr-Code را
+                        برای شما رقم می زند.
                         مخاطبین شما با استفاده از کد کیو.آر.چی دقیقا همان چیزی را
                         می بینند که شما می خواهید دیده شود.</p>
                 </div>
@@ -113,13 +151,13 @@
                         <p class="text-grayScale-700 text-lg"><a href="https://www.instagram.com/qr.chi">qr.chi@</a></p>
                     </span>
                 </div>
-                <div class="flex flex-col text-2xl gap-6 footer-col-3">
+                <div class="flex flex-col w-[222px] text-2xl gap-6 footer-col-3">
                     <h5 class="text-grayScale-800 footer-title">
                         مقالات
                     </h5>
-                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
-                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
-                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
+                    <p class="text-grayScale-700 text-sm sm:text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
+                    <p class="text-grayScale-700 text-sm sm:text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
+                    <p class="text-grayScale-700 text-sm sm:text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
                 </div>
             </section>
             <hr class="bg-grayScale-500 mt-20">
@@ -138,15 +176,16 @@
 
     <!-- End of Footer -->
 
-        <!-- Blur Bgs -->
+    <!-- Blur Bgs -->
 
-        <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[12%] right-[-10%] blur-3xl"></div>
-        <div class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[35%] left-[8%] blur-3xl rotate-[30deg]"></div>
-    
-        <!-- End of Blur Bgs -->
-    
+    <!-- <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 max-[640px]:hidden top-[12%] right-[-10%] blur-3xl"></div>
+        <div class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 max-[640px]:hidden top-[35%] left-[8%] blur-3xl rotate-[30deg]"></div> -->
+
+    <!-- End of Blur Bgs -->
+
 
 
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
