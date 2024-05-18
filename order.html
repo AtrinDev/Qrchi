@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./src/output.css">
     <title>Order</title>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -37,7 +39,7 @@
                 </a>
             </nav>
             <i class="fab fa-sistrix ml-2 hidden sm:block text-grayScale-700"></i>
-            <div class="flex sm:flex-row lg:justify-between hidden sm:block">
+            <div class="flex sm:flex-row lg:justify-between sm:block">
                 <div class="w-full h-20 flex items-center justify-center">
                     <a href="order.html"
                         class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
@@ -59,8 +61,9 @@
     </header>
     <section class="flex justify-center items-center">
         <div id="flex flex-col justify-center items-center mt-8">
-            <h3 class="text-4xl text-primary-400 text-center page-title-h3">ثبت سفارش</h3>   
-            <p class="text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html" class="text-primary-800">خانه</a> /  ثبت سفارش</p>
+            <h3 class="text-4xl text-primary-400 text-center page-title-h3">ثبت سفارش</h3>
+            <p class="text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html"
+                    class="text-primary-800">خانه</a> / ثبت سفارش</p>
         </div>
     </section>
 
@@ -69,68 +72,81 @@
     <!-- Order Form -->
 
     <section class="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto mt-24 mb-14 max-[1300px]:mx-8">
-            <form action="" class="flex flex-col justify-between">
-                    <div class="flex flex-col md:flex-row justify-between mt-14">
-                        <div class="flex flex-col">
-                            <span class="flex flex-row items-center gap-4">
-                                <i class="fas fa-user text-primary-400 text-xl"></i>
-                                <label for="name" class="text-lg text-primary-400 form-label">نام و نام خانوادگی</label>
-                            </span>
-                            <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full md:w-[400px] lg:w-[450px] xl:w-[588px] form-input" placeholder="نام و نام خانوادگی">
-                        </div>
-                        <div class="flex flex-col max-[768px]:mt-14 phone-input">
-                            <span class="flex flex-row items-center gap-4">
-                                <i class="fas fa-phone text-primary-400 text-xl"></i>
-                                <label for="phone" class="text-lg text-primary-400 form-label">شماره تماس</label>
-                            </span>
-                            <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full  md:w-[400px] lg:w-[450px] xl:w-[588px] form-input" placeholder="شماره تماس">
-                        </div>
-                    </div>
-                <div class="flex flex-col md:flex-row justify-between mt-14">
-                    <div class="flex flex-col">
-                        <span class="flex flex-row items-center gap-4">
-                            <i class="fas fa-globe text-primary-400 text-xl"></i>
-                            <label for="site" class="text-lg text-primary-400 form-label">آدرس سایت</label>
-                        </span>
-                        <input type="url" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full  md:w-[400px] lg:w-[450px] xl:w-[588px] form-input" placeholder="آدرس سایت">
-                    </div>
-                    <div class="flex flex-col max-[768px]:mt-14">
-                        <span class="flex flex-row items-center gap-4">
-                            <i class="fab fa-instagram-square text-primary-400 text-xl"></i>
-                            <label for="instagram" class="text-lg text-primary-400 form-label">اینستاگرام</label>
-                        </span>
-                        <input type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full  md:w-[400px] lg:w-[450px] xl:w-[588px] form-input" placeholder="اینستاگرام">
-                    </div>
+        <form action="" class="flex flex-col justify-between">
+            <div class="flex flex-col md:flex-row justify-between mt-14">
+                <div class="flex flex-col">
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-user text-primary-400 text-xl"></i>
+                        <label for="name" class="text-lg text-primary-400 form-label">نام و نام خانوادگی</label>
+                    </span>
+                    <input type="text"
+                        class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full md:w-[400px] lg:w-[450px] xl:w-[588px] form-input"
+                        placeholder="نام و نام خانوادگی">
                 </div>
-                <div class="flex flex-col md:flex-row justify-between mt-14">
-                    <div class="flex flex-col">
-                        <span class="flex flex-row items-center gap-4">
-                            <i class="fas fa-check text-primary-400 text-xl"></i>
-                            <label for="package" class="text-lg text-primary-400 form-label">انتخاب پکیج</label>
-                        </span>
-                            <select class="px-6 py-4 rounded-xl mt-4 text-[17px] focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full  md:w-[400px] lg:w-[450px] xl:w-[588px] h-[56px] form-input">
-                                <option class="text-sm text-grayScale-800">انتخاب پکیج</option>
-                                <option value="silver" class="text-sm text-grayScale-800">پکیج نقره ای</option>
-                                <option value="gold" class="text-sm text-grayScale-800">پکیج طلایی</option>
-                                <option value="platinum" class="text-sm text-grayScale-800">پکیج پلاتینیومی</option>
-                            </select>
-                    </div>
-                    <div class="flex flex-col max-[768px]:mt-14">
-                        <span class="flex flex-row items-center gap-4">
-                            <i class="fas fa-briefcase text-primary-400 text-xl"></i>
-                            <label for="name" class="text-lg text-primary-400 form-label">حوزه فعالیت</label>
-                        </span>
-                        <input type="job" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full md:w-[400px] lg:w-[450px] xl:w-[588px] form-input" placeholder="حوزه فعالیت">
-                    </div>
+                <div class="flex flex-col max-[768px]:mt-14 phone-input">
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-phone text-primary-400 text-xl"></i>
+                        <label for="phone" class="text-lg text-primary-400 form-label">شماره تماس</label>
+                    </span>
+                    <input type="text"
+                        class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full  md:w-[400px] lg:w-[450px] xl:w-[588px] form-input"
+                        placeholder="شماره تماس">
                 </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between mt-14">
+                <div class="flex flex-col">
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-globe text-primary-400 text-xl"></i>
+                        <label for="site" class="text-lg text-primary-400 form-label">آدرس سایت</label>
+                    </span>
+                    <input type="url"
+                        class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full  md:w-[400px] lg:w-[450px] xl:w-[588px] form-input"
+                        placeholder="آدرس سایت">
+                </div>
+                <div class="flex flex-col max-[768px]:mt-14">
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fab fa-instagram-square text-primary-400 text-xl"></i>
+                        <label for="instagram" class="text-lg text-primary-400 form-label">اینستاگرام</label>
+                    </span>
+                    <input type="text"
+                        class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full  md:w-[400px] lg:w-[450px] xl:w-[588px] form-input"
+                        placeholder="اینستاگرام">
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between mt-14">
+                <div class="flex flex-col">
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-check text-primary-400 text-xl"></i>
+                        <label for="package" class="text-lg text-primary-400 form-label">انتخاب پکیج</label>
+                    </span>
+                    <select
+                        class="px-6 py-4 rounded-xl mt-4 text-[17px] focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full  md:w-[400px] lg:w-[450px] xl:w-[588px] h-[56px] form-input">
+                        <option class="text-sm text-grayScale-800">انتخاب پکیج</option>
+                        <option value="silver" class="text-sm text-grayScale-800">پکیج نقره ای</option>
+                        <option value="gold" class="text-sm text-grayScale-800">پکیج طلایی</option>
+                        <option value="platinum" class="text-sm text-grayScale-800">پکیج پلاتینیومی</option>
+                    </select>
+                </div>
+                <div class="flex flex-col max-[768px]:mt-14">
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-briefcase text-primary-400 text-xl"></i>
+                        <label for="name" class="text-lg text-primary-400 form-label">حوزه فعالیت</label>
+                    </span>
+                    <input type="job"
+                        class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 sm:w-full md:w-[400px] lg:w-[450px] xl:w-[588px] form-input"
+                        placeholder="حوزه فعالیت">
+                </div>
+            </div>
             <div class="flex flex-col md:flex-row mt-14 mx-auto max-[768px]:w-full">
-                    <div class="flex flex-col">
-                        <span class="flex flex-row items-center gap-4">
-                            <i class="fas fa-bars text-primary-400 text-xl"></i>
-                            <label for="package" class="text-lg text-primary-400 form-label">توضیحات</label>
-                        </span>
-                        <textarea type="text" class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 md:w-[588px] form-input resize-none" placeholder="توضیحات" rows="5"></textarea>
-                    </div>
+                <div class="flex flex-col">
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-bars text-primary-400 text-xl"></i>
+                        <label for="package" class="text-lg text-primary-400 form-label">توضیحات</label>
+                    </span>
+                    <textarea type="text"
+                        class="px-6 py-4 rounded-xl mt-4 focus:outline-none focus:border-amber-600 focus:shadow-lg text-grayScale-800 md:w-[588px] form-input resize-none"
+                        placeholder="توضیحات" rows="5"></textarea>
+                </div>
             </div>
             <div class="w-full h-20 flex items-center justify-center mt-14">
                 <a href="#"
@@ -140,7 +156,8 @@
                     <span
                         class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                     <span class="relative z-20 flex items-center text-sm">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z">
                         </path>
                         </svg>
                         ارسال درخواست
@@ -154,18 +171,21 @@
 
     <!-- Footer -->
 
-    <!-- <div class="footer-bg"></div>
+    <div class="footer-bg"></div>
     <footer id="footer" class="-mt-80 footer-bg-2">
-        <section class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto">
-            <section class="mt-16 flex flex-col sm:flex-row justify-betweena items-center sm:gap-48">
-                <div class="flex flex-col footer-col-1">
+        <section class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto max-[920px]:mx-8">
+            <section
+                class="mt-16 flex flex-col sm:flex-row justify-between max-[860px]:flex-wrap items-center sm:gap-48">
+                <div class="flex flex-col w-[410px] max-[640px]:w-[200px] footer-col-1">
                     <img src="./assets/images/Qrchi qr code qrcode.PNG" alt="footer logo" class="w-14">
-                    <h5 class="text-xl text-grayScale-800 mt-8">همه وقت، همه جا، همه چی</h5>
-                    <p class="text-base text-justify text-grayScale-700 mt-4">کیو.آر.چی تجربه ای متفاوت از Qr-Code را برای شما رقم می زند.
+                    <h5 class="text-xl text-grayScale-800 mt-8 max-[860px]:text-lg">همه وقت، همه جا، همه چی</h5>
+                    <p class="text-base text-justify text-grayScale-700 mt-4 max-[860px]:text-xs">کیو.آر.چی تجربه ای
+                        متفاوت از Qr-Code را
+                        برای شما رقم می زند.
                         مخاطبین شما با استفاده از کد کیو.آر.چی دقیقا همان چیزی را
                         می بینند که شما می خواهید دیده شود.</p>
                 </div>
-                <div class="flex flex-col text-2xl gap-6 footer-col-2">
+                <div class="flex flex-col text-2xl gap-6 max-[850px]:-mt-32 max-[640px]:mt-16 footer-col-2">
                     <h5 class="text-grayScale-800 footer-title">
                         ارتباط با ما
                     </h5>
@@ -182,17 +202,17 @@
                         <p class="text-grayScale-700 text-lg"><a href="https://www.instagram.com/qr.chi">qr.chi@</a></p>
                     </span>
                 </div>
-                <div class="flex flex-col text-2xl gap-6 footer-col-3">
+                <div class="flex flex-col text-2xl gap-6 max-[860px]:-mt-32 max-[640px]:mt-16 footer-col-3">
                     <h5 class="text-grayScale-800 footer-title">
                         مقالات
                     </h5>
-                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
-                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
-                    <p class="text-grayScale-700 text-base">لورم ایپسوم متن تست لورم ایپسوم</p>
+                    <p class="text-grayScale-700 text-base max-[1280px]:text-[12px]">لورم ایپسوم متن تست لورم ایپسوم</p>
+                    <p class="text-grayScale-700 text-base max-[1280px]:text-[12px]">لورم ایپسوم متن تست لورم ایپسوم</p>
+                    <p class="text-grayScale-700 text-base max-[1280px]:text-[12px]">لورم ایپسوم متن تست لورم ایپسوم</p>
                 </div>
             </section>
             <hr class="bg-grayScale-500 mt-20">
-            <div class="flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex flex-col sm:flex-row justify-between items-center max-[350px]:text-[12px]">
                 <img src="./assets/images/Mavaranet-Logo.png" alt="mavaranet logo" class="my-4">
                 <ul class="flex flex-row footer-links text-grayScale-800 my-4">
                     <li class="px-4"><a href="packages.html">پکیج ها</a></li>
@@ -203,19 +223,20 @@
                 </ul>
             </div>
         </section>
-    </footer> -->
+    </footer>
 
     <!-- End of Footer -->
 
-        <!-- Blur Bgs -->
+    <!-- Blur Bgs -->
 
-        <!-- <div class="w-[445px] h-[553px] bg-secondary-500/10 rounded-full absolute -z-10 top-[40%] right-[12%] blur-3xl"></div>
+    <!-- <div class="w-[445px] h-[553px] bg-secondary-500/10 rounded-full absolute -z-10 top-[40%] right-[12%] blur-3xl"></div>
         <div class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[75%] left-[8%] blur-3xl rotate-[30deg]"></div> -->
-    
-        <!-- End of Blur Bgs -->
-    
+
+    <!-- End of Blur Bgs -->
+
 
 
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
