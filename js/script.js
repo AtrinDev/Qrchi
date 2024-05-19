@@ -25,7 +25,7 @@ const multimediSwiper = new Swiper(".swiper", {
       slidesPerView: 2,
     },
     768: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
     },
     992: {
       slidesPerView: 4,

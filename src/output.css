@@ -76149,7 +76149,7 @@ video {
 }
 
 .hero-bg-2 {
-  background: url('../assets/images/Vector.png') right 70% no-repeat;
+  background: url('../assets/images/Vector.png') right 52% no-repeat;
 }
 
 .hero-info h1 {
@@ -76231,10 +76231,6 @@ video {
 
 .upper-package-3 {
   background: url(../assets/images/Qrcode.png) no-repeat, linear-gradient(-100deg,#5DB6E8, #B1DAF2, #5DB6E8);
-}
-
-.upper-package {
-  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.4) inset;
 }
 
 .upper-package p {
@@ -76396,12 +76392,12 @@ video {
 }
 
 .footer-bg {
-  /* background: url('../assets/images/Footer-Bg-1.png') right no-repeat; */
+  background: url('../assets/images/Footer-Bg-1.png') right no-repeat;
   height: 410px;
 }
 
 .footer-bg-2 {
-  /* background: url('../assets/images/Footer-Bg-2.png') bottom left no-repeat; */
+  background: url('../assets/images/Footer-Bg-2.png') bottom left no-repeat;
 }
 
 /* ----------End of Home---------- */
