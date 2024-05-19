@@ -15,15 +15,20 @@
 
     <!-- Header -->
 
-    <section id="nav" class="sticky top-0 z-10">    
+    <section id="nav" class="sticky top-0 z-10">
         <section class="max-w-7xl mx-auto py-4 flex justify-between items-center max-[1280px]:mx-8">
             <a href="index.html"><img src="./assets/images/Qr Chi.png" class="w-16"></a>
-            <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none nav-links">
-                &#9776;
+            <button id="hamburger-menu"
+                class="text-3xl sm:hidden text-grayScale-900 focus:outline-none cursor-pointer relative w-8 h-8 nav-links">
+                <!-- &#9776; -->
+                <div
+                    class="bg-gray-900 w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-gray-900 before:w-8 before:h-1 before:rounded before:absolute before:translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-gray-900 after:w-8 after:h-1 after:rounded after:absolute after:translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+                </div>
             </button>
             <nav
                 class="hidden sm:block lg:space-x-8 sm:text-xs md:text-[13px] xl:text-lg sm:ml-10 sm:mr-4 lg:mr-18 xl:ml-72 xl:mr-20">
-                <a href="index.html" class="text-grayScale-700 hover:text-gray-500 font-black sm:pl-3 lg:pl-8 nav-links">
+                <a href="index.html"
+                    class="text-grayScale-700 hover:text-gray-500 font-black sm:pl-3 lg:pl-8 nav-links">
                     خانه
                 </a>
                 <a href="packages.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
@@ -59,43 +64,86 @@
                 </div>
             </div>
         </section>
-    </section>
-    <header id="header" class="min-h-screen -mt-28 bg-no-repeat bg-left-top bg-contain hero-bg">
-        <section class="hero-bg-2">
-            <section id="hero" class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center min-[900px]:gap-x-40 mb-12 max-[1240px]:mx-8">
-                <div class="max-[1280px]:pt-[90px] md:mt-16 hero-info">
-                    <h1 class="text-4xl mb-10 text-primary-800">کیوآرچی</h1>
-                    <h5 class="text-xl mb-8 text-grayScale-800">همه وقت، همه جا، همه چی</h5>
-                    <p class="text-base max-w-lg mb-10 text-justify text-grayScale-600 max-[640px]:text-sm">کیو.آر.چی تجربه ای متفاوت از
-                        Qr-Code را برای شما رقم می زند.
-                        مخاطبین شما با استفاده از کد کیو.آر.چی دقیقا همان چیزی را
-                        می بینند که شما می خواهید دیده شود.</p>
-                    <p class="text-base max-w-lg mb-10 text-justify -mt-4 text-grayScale-600 max-[640px]:text-sm">کیوآرکد اختصاصی این
-                        امکان را برای شما فراهم می کند تا
-                        با یک اسکن ساده دسترسی به نظرسنجی، شبکه‌های اجتماعی، وبسایت،
-                        کاتالوگ محصولات، اطلاعات تماس و ... به راحتی در اختیار کاربران و مراجعین شما قرار بگیرد.</p>
-                        <div class="flex sm:flex-row">
-                            <a href="packages.html"
-                                class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+        <section id="mobile-menu"
+            class="absolute top-0 bg-grayScale-0 w-full text-2xl flex flex-col justify-center origin-top animate-open-menu hidden">
+            <!-- <button class="text-3xl self-end px-6 text-grayScale-900">
+                &times;
+            </button> -->
+            <nav class="flex flex-col min-h-screen items-center py-8 mobile-menu" aria-label="mobile">
+                <a href="index.html"
+                    class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">خانه</a>
+                <a href="packages.html"
+                    class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">پکیج
+                    ها</a>
+                <a href="#" class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">تماس با
+                    ما</a>
+                <a href="#" class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">درباره ما</a>
+                <a href="profiles.html"
+                    class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">نمونه
+                    پروفایل ها</a>
+                <div class="flex flex-row justify-center items-center gap-6">
+                    <i class="fab fa-sistrix ml-2 text-grayScale-700"></i>
+                    <div class="flex sm:flex-row lg:justify-between">
+                        <div class="w-full h-20 flex items-center justify-center">
+                            <a href="order.html"
+                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
                                 <span
                                     class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                                 <span
                                     class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                                 <span class="relative z-20 flex items-center text-sm">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        d="M13 10V3L4 14h7v7l9-11h-7z">
+                                    </path>
                                     </svg>
-                                    پکیج ها
+                                    ثبت سفارش
                                 </span>
                             </a>
-                            <a href="profiles.html"
-                                class="w-36 rounded-md mr-8 secondary-btn text-secondary-500 flex justify-center items-center">نمونه
-                                پروفایل ها</a>
                         </div>
-                </div> 
-                    <div>
-                        <img src="./assets/images/Hero illustration.png" alt="Mobile" class="mt-12">
                     </div>
+                </div>
+            </nav>
+        </section>
+    </section>
+    <header id="header" class="min-h-screen -mt-28 bg-no-repeat bg-left-top bg-contain hero-bg">
+        <section class="hero-bg-2">
+            <section id="hero"
+                class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center min-[900px]:gap-x-40 mb-12 max-[1240px]:mx-8">
+                <div class="max-[1280px]:pt-[90px] md:mt-16 hero-info">
+                    <h1 class="text-4xl mb-10 text-primary-800">کیوآرچی</h1>
+                    <h5 class="text-xl mb-8 text-grayScale-800">همه وقت، همه جا، همه چی</h5>
+                    <p class="text-base max-w-lg mb-10 text-justify text-grayScale-600 max-[640px]:text-sm">کیو.آر.چی
+                        تجربه ای متفاوت از
+                        Qr-Code را برای شما رقم می زند.
+                        مخاطبین شما با استفاده از کد کیو.آر.چی دقیقا همان چیزی را
+                        می بینند که شما می خواهید دیده شود.</p>
+                    <p class="text-base max-w-lg mb-10 text-justify -mt-4 text-grayScale-600 max-[640px]:text-sm">
+                        کیوآرکد اختصاصی این
+                        امکان را برای شما فراهم می کند تا
+                        با یک اسکن ساده دسترسی به نظرسنجی، شبکه‌های اجتماعی، وبسایت،
+                        کاتالوگ محصولات، اطلاعات تماس و ... به راحتی در اختیار کاربران و مراجعین شما قرار بگیرد.</p>
+                    <div class="flex sm:flex-row">
+                        <a href="packages.html"
+                            class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                            <span
+                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                            <span
+                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                            <span class="relative flex items-center text-sm">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                                پکیج ها
+                            </span>
+                        </a>
+                        <a href="profiles.html"
+                            class="w-36 rounded-md mr-8 secondary-btn text-secondary-500 flex justify-center items-center">نمونه
+                            پروفایل ها</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/images/Hero illustration.png" alt="Mobile" class="mt-12">
+                </div>
             </section>
         </section>
     </header>
@@ -364,7 +412,8 @@
                         را پیشنهاد نمی کنیم. کیوآرچی از ابتدا با یک شرایط شفاف سرویس را به شما ارائه می دهد و با دریافت
                         هزینه ها معقول خدمات را با کیفیت بالا ارائه می دهد.</p>
                 </div>
-                <div class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl max-[1280px]:w-[500px] max-[768px]:w-[400px] max-[420px]:w-[350px] mx-auto single-faq">
+                <div
+                    class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl max-[1280px]:w-[500px] max-[768px]:w-[400px] max-[420px]:w-[350px] mx-auto single-faq">
                     <div class="flex flex-row justify-between pb-5">
                         <h4 class="text-grayScale-800 faq-question">چرا سرویس مورد نظر را از کیوارچی‌ تهیه کنم؟</h4>
                         <i class="fas fa-angle-up text-xl text-grayScale-800"></i>
@@ -374,7 +423,8 @@
                         برنامه نویسی و طراحی سایت بالاترین سطح خدمات و پشتیبانی ۲۴ ساعته سرویس را برای شما رقم خواهد زد.
                     </p>
                 </div>
-                <div class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl max-[1280px]:w-[500px] max-[768px]:w-[400px] max-[420px]:w-[350px] mx-auto single-faq">
+                <div
+                    class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl max-[1280px]:w-[500px] max-[768px]:w-[400px] max-[420px]:w-[350px] mx-auto single-faq">
                     <div class="flex flex-row justify-between pb-5">
                         <h4 class="text-grayScale-800 faq-question">اطلاعات پروفایل کیوارکد قابل تغییره؟</h4>
                         <i class="fas fa-angle-up text-xl text-grayScale-800"></i>
@@ -388,7 +438,7 @@
         </section>
     </section>
 
-    <!-- End of FAQ -->     
+    <!-- End of FAQ -->
 
     <!-- Order -->
 
@@ -396,12 +446,15 @@
         <section class="mt-16 flex max-[920px]:flex-col md:flex-row max-[920px]:mx-8 justify-between items-center">
             <div class="flex flex-col text-justify order-info max-[920px]:w-[300px]">
                 <h2 class="text-grayScale-800 text-3xl mb-6 max-[920px]:text-2xl">کیو آر چی ویترین مجازی شما</h2>
-                <p class="text-grayScale-600 text-base max-[920px]:text-sm">کیوآرکد اختصاصی این امکان را برای شما فراهم می کند تا با یک اسکن
+                <p class="text-grayScale-600 text-base max-[920px]:text-sm">کیوآرکد اختصاصی این امکان را برای شما فراهم
+                    می کند تا با یک اسکن
                     ساده دسترسی به نظرسنجی، شبکه‌های اجتماعی، وبسایت، کاتالوگ محصولات، اطلاعات تماس و ... به راحتی در
                     اختیار کاربران و مراجعین شما قرار بگیرد.</p>
-                <p class="text-grayScale-600 text-base mb-10 max-[920px]:text-sm">چاپ 1000 کارت کیوآرکد 680/000 تومان و استند کیوآرکد
+                <p class="text-grayScale-600 text-base mb-10 max-[920px]:text-sm">چاپ 1000 کارت کیوآرکد 680/000 تومان و
+                    استند کیوآرکد
                     480/000 تومان</p>
-                <p class="text-grayScale-600 text-base mb-10 max-[920px]:text-sm">همین حالا کیو آر کد خود را سفارش دهید.</p>
+                <p class="text-grayScale-600 text-base mb-10 max-[920px]:text-sm">همین حالا کیو آر کد خود را سفارش دهید.
+                </p>
                 <div class="w-full h-20 flex items-center">
                     <a href="order.html"
                         class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
@@ -409,7 +462,7 @@
                             class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                         <span
                             class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                        <span class="relative z-20 flex items-center text-sm">
+                        <span class="relative flex items-center text-sm">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M13 10V3L4 14h7v7l9-11h-7z">
                             </path>
@@ -419,7 +472,8 @@
                     </a>
                 </div>
             </div>
-            <div class="w-1/2 flex justify-center items-enter max-[1024px]:w-[400px] max-[460px]:w-[380px] max-[768px]:mt-16 order-img">
+            <div
+                class="w-1/2 flex justify-center items-enter max-[1024px]:w-[400px] max-[460px]:w-[320px] max-[380px]:w-[280px] max-[768px]:mt-16 order-img">
                 <img src="./assets/images/Phones.png" alt="phones" class="mobiles">
             </div>
         </section>
@@ -512,7 +566,7 @@
                     class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                 <span
                     class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                <span class="relative z-20 flex items-center text-sm">
+                <span class="relative flex items-center text-sm">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M13 10V3L4 14h7v7l9-11h-7z">
                     </path>

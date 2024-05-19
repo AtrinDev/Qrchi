@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent
+    }
+}
+
 @font-face {
     font-family: 'IRANSansXFaNum thin';
     font-weight: 100;
@@ -123,6 +129,9 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.mobile-menu {
+    font-family: 'IRANSansXFaNum regular';
+}
 /* Services */
 
 .service {
