@@ -13,13 +13,15 @@
 
 <body class="backdrop-blur-3xl">
 
+    <main class="relative">
+
     <!-- Header -->
 
     <section id="nav" class="sticky top-0 z-10">
         <section class="max-w-7xl mx-auto py-4 flex justify-between items-center max-[1280px]:mx-8">
             <a href="index.html"><img src="./assets/images/Qr Chi.png" class="w-16"></a>
             <button id="hamburger-menu"
-                class="text-3xl sm:hidden text-grayScale-900 focus:outline-none cursor-pointer relative w-8 h-8 nav-links">
+                class="text-3xl sm:hidden text-grayScale-900 focus:outline-none cursor-pointer relative w-8 h-8 nav-links open-menu">
                 <!-- &#9776; -->
                 <div
                     class="bg-gray-900 w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-gray-900 before:w-8 before:h-1 before:rounded before:absolute before:translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-gray-900 after:w-8 after:h-1 after:rounded after:absolute after:translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
@@ -34,18 +36,18 @@
                 <a href="packages.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
                     پکیج ها
                 </a>
-                <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
-                    تماس با ما
-                </a>
-                <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
-                    درباره ما
-                </a>
                 <a href="profiles.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
                     نمونه پروفایل ها
                 </a>
+                <a href="blogs.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
+                    مقالات
+                </a>
             </nav>
-            <i class="fab fa-sistrix ml-2 hidden sm:block text-grayScale-700"></i>
-            <div class="flex sm:flex-row lg:justify-between hidden sm:block">
+            <div class="ml-8 relative max-[950px]:hidden">
+                <input type="text" class="rounded-3xl bg-grayScale-0 px-4 py-2 hidden sm:block focus:outline-none shadow-md search" placeholder="جستجو...">
+                <i class="fab fa-sistrix text-md ml-2 hidden sm:block text-grayScale-700 cursor-pointer absolute top-3 left-2"></i>
+            </div>
+            <div class="sm:flex-row lg:justify-between hidden sm:block">
                 <div class="w-full h-20 flex items-center justify-center">
                     <a href="order.html"
                         class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
@@ -65,24 +67,24 @@
             </div>
         </section>
         <section id="mobile-menu"
-            class="absolute top-0 bg-grayScale-0 w-full text-2xl flex flex-col justify-center origin-top animate-open-menu hidden">
+            class="absolute top-0 bg-grayScale-0 w-full text-2xl flex-col justify-center origin-top animate-open-menu hidden">
             <!-- <button class="text-3xl self-end px-6 text-grayScale-900">
                 &times;
             </button> -->
+            <div class="relative flex justify-center mt-24">
+                <input type="text" class="rounded-3xl bg-grayScale-0 px-4 py-2 focus:outline-none shadow-md search mobile-search" placeholder="جستجو...">
+                <i class="fab fa-sistrix text-md ml-2 text-grayScale-700 cursor-pointer absolute top-3 left-6"></i>
+            </div>
             <nav class="flex flex-col min-h-screen items-center py-8 mobile-menu" aria-label="mobile">
                 <a href="index.html"
-                    class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">خانه</a>
+                    class="w-full text-center text-xl py-4 text-grayScale-700 hover:text-gray-500">خانه</a>
                 <a href="packages.html"
-                    class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">پکیج
+                    class="w-full text-center text-xl py-4 text-grayScale-700 hover:text-gray-500">پکیج
                     ها</a>
-                <a href="#" class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">تماس با
-                    ما</a>
-                <a href="#" class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">درباره ما</a>
                 <a href="profiles.html"
-                    class="w-full text-center text-xl py-6 text-grayScale-700 hover:text-gray-500">نمونه
+                    class="w-full text-center text-xl py-4 text-grayScale-700 hover:text-gray-500">نمونه
                     پروفایل ها</a>
-                <div class="flex flex-row justify-center items-center gap-6">
-                    <i class="fab fa-sistrix ml-2 text-grayScale-700"></i>
+                    <a href="blogs.html" class="w-full text-center text-xl py-4 text-grayScale-700 hover:text-gray-500">مقالات</a>
                     <div class="flex sm:flex-row lg:justify-between">
                         <div class="w-full h-20 flex items-center justify-center">
                             <a href="order.html"
@@ -101,7 +103,6 @@
                             </a>
                         </div>
                     </div>
-                </div>
             </nav>
         </section>
     </section>
@@ -109,7 +110,7 @@
         <section class="hero-bg-2">
             <section id="hero"
                 class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center min-[900px]:gap-x-40 mb-12 max-[1240px]:mx-8">
-                <div class="max-[1280px]:pt-[90px] md:mt-16 hero-info">
+                <div class="max-[1280px]:pt-[90px] max-[768px]:pt-[10px] md:mt-16 hero-info">
                     <h1 class="text-4xl mb-10 text-primary-800">کیوآرچی</h1>
                     <h5 class="text-xl mb-8 text-grayScale-800">همه وقت، همه جا، همه چی</h5>
                     <p class="text-base max-w-lg mb-10 text-justify text-grayScale-600 max-[640px]:text-sm">کیو.آر.چی
@@ -142,7 +143,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/images/Hero illustration.png" alt="Mobile" class="mt-12">
+                    <img src="./assets/images/Hero illustration.png" alt="Mobile" class="mt-20">
                 </div>
             </section>
         </section>
@@ -400,12 +401,12 @@
             <img src="./assets/images/FAQ Illustration.png" alt="faq" class="max-[1280px]:w-1/3 max-[768px]:w-3/4">
             <div class="flex flex-col gap-6 max-[768px]:mt-16">
                 <div
-                    class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl max-[1280px]:w-[500px] max-[768px]:w-[400px] max-[420px]:w-[350px] mx-auto single-faq collapse-header collapse-item active">
-                    <div class="flex flex-row justify-between pb-5">
+                    class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl max-[1280px]:w-[500px] max-[768px]:w-[400px] max-[420px]:w-[350px] mx-auto single-faq">
+                    <div class="flex flex-row justify-between cursor-pointer collapse-header active">
                         <h4 class="text-grayScale-800 faq-question">تفاوت کیوارچی و سرویس های رایگان مشابه چیه؟</h4>
-                        <i class="fas fa-angle-up text-xl text-grayScale-800"></i>
+                        <i class="fas fa-angle-down text-xl text-grayScale-800"></i>
                     </div>
-                    <p class="text-grayScale-600 text-justify faq-answer">در زمان استفاده از کیوآرکد سرویس های رایگان
+                    <p class="text-grayScale-600 text-justify faq-answer collapse-item">در زمان استفاده از کیوآرکد سرویس های رایگان
                         شما با چاپ کیوآرکد و استفاده های تبلیغاتی هزینه خواهید کرد اما پس از مدتی سرویس قطع خواهد شد و
                         جهت ادامه سرویس تعرفه ی اشتراک دلاری و یا هزینه های ریالی سنگین برای شما مطرح خواهد شد که با
                         توجه به محدودیت های پرداختی و مسائل تحریم های بین المللی به طور کل ما سرویس های خارجی و رایگان
@@ -414,22 +415,22 @@
                 </div>
                 <div
                     class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl max-[1280px]:w-[500px] max-[768px]:w-[400px] max-[420px]:w-[350px] mx-auto single-faq">
-                    <div class="flex flex-row justify-between pb-5">
+                    <div class="flex flex-row justify-between cursor-pointer collapse-header">
                         <h4 class="text-grayScale-800 faq-question">چرا سرویس مورد نظر را از کیوارچی‌ تهیه کنم؟</h4>
-                        <i class="fas fa-angle-up text-xl text-grayScale-800"></i>
+                        <i class="fas fa-angle-down text-xl text-grayScale-800"></i>
                     </div>
-                    <p class="text-grayScale-600 text-justify faq-answer">دپارتمان کیوارچی با پشتوانه ی هولدینگ فعال در
+                    <p class="text-grayScale-600 text-justify faq-answer hidden collapse-item">دپارتمان کیوارچی با پشتوانه ی هولدینگ فعال در
                         حوزه های آنلاین در همه ی زمینه‌های طراحی گرافیکی و برنامه نویسی با بیش از پانزده سال سابقه در
                         برنامه نویسی و طراحی سایت بالاترین سطح خدمات و پشتیبانی ۲۴ ساعته سرویس را برای شما رقم خواهد زد.
                     </p>
                 </div>
                 <div
                     class="flex flex-col px-6 py-5 bg-[white]/50 rounded-3xl max-[1280px]:w-[500px] max-[768px]:w-[400px] max-[420px]:w-[350px] mx-auto single-faq">
-                    <div class="flex flex-row justify-between pb-5">
+                    <div class="flex flex-row justify-between cursor-pointer collapse-header">
                         <h4 class="text-grayScale-800 faq-question">اطلاعات پروفایل کیوارکد قابل تغییره؟</h4>
-                        <i class="fas fa-angle-up text-xl text-grayScale-800"></i>
+                        <i class="fas fa-angle-down text-xl text-grayScale-800"></i>
                     </div>
-                    <p class="text-grayScale-600 text-justify faq-answer">بله تمام اطلاعات طراحی ها و محتوای کیوآرکد شما
+                    <p class="text-grayScale-600 text-justify faq-answer hidden collapse-item">بله تمام اطلاعات طراحی ها و محتوای کیوآرکد شما
                         هر لحظه قابل ویرایش هست.
                         با تغییر ادرس، شماره، آدرس اینستاگرام و وبسایت یا ویرایش کاتالوگ محصولات، کیوارکد هم برای شما به
                         روز میشود.</p>
@@ -638,25 +639,26 @@
 
     <!-- Blur Bgs -->
 
-    <!-- <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[15%] right-[-10%] blur-3xl">
+    <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[15%] right-[-10%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]">
     </div>
     <div
-        class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[15%] left-[7%] blur-3xl rotate-[30deg]">
+        class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[15%] left-[7%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]">
     </div>
-    <div class="w-[445px] h-[723px] bg-secondary-500/10 rounded-full absolute -z-10 top-[19%] left-[35%] blur-3xl">
+    <div class="w-[445px] h-[723px] bg-secondary-500/10 rounded-full absolute -z-10 top-[19%] left-[35%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]">
     </div>
-    <div class="w-[652px] h-[606px] bg-secondary-500/10 rounded-full absolute -z-10 top-[32%] left-[5%] blur-3xl"></div>
-    <div class="w-[728px] h-[735px] bg-secondary-500/10 rounded-full absolute -z-10 top-[34%] right-[-20%] blur-3xl">
+    <div class="w-[652px] h-[606px] bg-secondary-500/10 rounded-full absolute -z-10 top-[32%] left-[5%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]"></div>
+    <div class="w-[728px] h-[735px] bg-secondary-500/10 rounded-full absolute -z-10 top-[34%] right-[-20%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]">
     </div>
-    <div class="w-[640px] h-[640px] bg-secondary-500/10 rounded-full absolute -z-10 top-[53%] left-[8%] blur-3xl"></div>
-    <div class="w-[530px] h-[926px] bg-secondary-500/10 rounded-full absolute -z-10 top-[63%] right-[-15%] blur-3xl">
+    <div class="w-[640px] h-[640px] bg-secondary-500/10 rounded-full absolute -z-10 top-[53%] left-[8%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]"></div>
+    <div class="w-[530px] h-[926px] bg-secondary-500/10 rounded-full absolute -z-10 top-[63%] right-[-15%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]">
     </div>
     <div
-        class="w-[403px] h-[590px] bg-secondary-500/10 rounded-full absolute -z-10 top-[80%] left-[5%] blur-3xl rotate-[10deg]">
-    </div> -->
+        class="w-[403px] h-[590px] bg-secondary-500/10 rounded-full absolute -z-10 top-[80%] left-[5%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]">
+    </div>
 
     <!-- End of Blur Bgs -->
 
+</main>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/jquery-3.6.1.slim.js"></script>

@@ -14,33 +14,34 @@
 
     <!-- Header -->
 
-    <header class="h-40 mx-8 navbar-bg">
-        <section class="max-w-7xl sm:mx-auto py-4 flex justify-between items-center sticky top-0 z-10">
+    <header class="h-40 navbar-bg">
+        <section class="max-w-7xl mx-auto py-4 flex justify-between items-center max-[1280px]:mx-8">
             <a href="index.html"><img src="./assets/images/Qr Chi.png" class="w-16"></a>
-            <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none nav-links">
-                &#9776;
+            <button id="hamburger-menu"
+                class="text-3xl sm:hidden text-grayScale-900 focus:outline-none cursor-pointer relative w-8 h-8 nav-links">
+                <!-- &#9776; -->
+                <div
+                    class="bg-gray-900 w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-gray-900 before:w-8 before:h-1 before:rounded before:absolute before:translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-gray-900 after:w-8 after:h-1 after:rounded after:absolute after:translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+                </div>
             </button>
             <nav
                 class="hidden sm:block lg:space-x-8 sm:text-xs md:text-[13px] xl:text-lg sm:ml-10 sm:mr-4 lg:mr-18 xl:ml-72 xl:mr-20">
-                <a href="index.html" class="text-grayScale-700 hover:text-gray-500 sm:pl-3 lg:pl-8 nav-links">
+                <a href="index.html"
+                    class="text-grayScale-700 hover:text-gray-500 sm:pl-3 lg:pl-8 nav-links">
                     خانه
                 </a>
-                <a href="packages.html"
-                    class="text-grayScale-700 hover:text-gray-500 font-black sm:px-1 lg:px-[5px] nav-links">
+                <a href="packages.html" class="text-grayScale-700 hover:text-gray-500 font-black sm:px-1 lg:px-[5px] nav-links">
                     پکیج ها
-                </a>
-                <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
-                    تماس با ما
-                </a>
-                <a href="#" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
-                    درباره ما
                 </a>
                 <a href="profiles.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
                     نمونه پروفایل ها
                 </a>
+                <a href="blogs.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
+                    مقالات
+                </a>
             </nav>
             <i class="fab fa-sistrix ml-2 hidden sm:block text-grayScale-700"></i>
-            <div class="flex sm:flex-row lg:justify-between sm:block">
+            <div class="sm:flex-row lg:justify-between hidden sm:block">
                 <div class="w-full h-20 flex items-center justify-center">
                     <a href="order.html"
                         class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
@@ -72,11 +73,7 @@
 
     <!-- Packages -->
 
-    <section id="Packages" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto my-24">
-        <div class="mx-auto flex flex-col items-center title">
-            <h1 class="title-name text-xl text-grayScale-800">معرفی پکیج ها</h1>
-            <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
-        </div>
+    <section id="Packages" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-36 mb-24">
         <section
             class="mt-24 flex flex-col sm:flex-row gap-10 justify-center xl:justify-between items-center flex-wrap mx-auto max-[960px]:mx-8">
             <div
@@ -252,8 +249,8 @@
 
     <!-- Blur Bgs -->
 
-    <!-- <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[20%] right-[-10%] blur-3xl"></div>
-    <div class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[40%] left-[8%] blur-3xl rotate-[30deg]"></div> -->
+    <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[20%] right-[-10%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]"></div>
+    <div class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[40%] left-[8%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]"></div>
 
     <!-- End of Blur Bgs -->
 

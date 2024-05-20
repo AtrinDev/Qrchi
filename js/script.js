@@ -51,7 +51,7 @@ const initApp = () => {
   };
 
   hamburgerBtn.addEventListener("click", toggleMenu);
-  mobileMenu.addEventListener("click", toggleMenu);
+  // mobileMenu.addEventListener("click", toggleMenu);
 };
 
 document.addEventListener("DOMContentLoaded", initApp);
