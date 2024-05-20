@@ -1,3 +1,5 @@
+// Navbar Scroll
+
 const navbar = document.querySelector("#nav");
 
 window.addEventListener("scroll", () => {
@@ -7,6 +9,8 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("navbar-fixed");
   }
 });
+
+// Swiper
 
 const multimediSwiper = new Swiper(".swiper", {
   loop: true,
@@ -40,6 +44,8 @@ const multimediSwiper = new Swiper(".swiper", {
   },
 });
 
+// Hamburger Menu
+
 const initApp = () => {
   const hamburgerBtn = document.getElementById("hamburger-menu");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -55,6 +61,8 @@ const initApp = () => {
 };
 
 document.addEventListener("DOMContentLoaded", initApp);
+
+// FAQ Expand & Collapse
 
 $(".collapse-header").click(function () {
   $(".collapse-item").slideUp();

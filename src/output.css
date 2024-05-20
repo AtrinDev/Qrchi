@@ -76174,6 +76174,44 @@ video {
   /* color: #666666; */
 }
 
+.hero-img {
+  animation: hero 8s 1s infinite;
+  -webkit-animation: hero 8s 1s infinite;
+}
+
+@media screen and (max-width:1100px) {
+  .hero-img {
+    animation: none;
+    -webkit-animation: none;
+  }
+}
+
+@keyframes hero {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(22deg);
+    -webkit-transform: rotate(22deg);
+    -moz-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    -o-transform: rotate(22deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+
 .navbar-fixed {
   background-color: #fff;
   position: fixed;
