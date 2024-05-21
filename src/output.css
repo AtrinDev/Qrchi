@@ -76135,6 +76135,9 @@ video {
   /* background-color: #E9BC49; */
 }
 
+.title-bg {
+}
+
 /* ----------Home---------- */
 
 /* Header */
@@ -76372,6 +76375,7 @@ video {
 
 .profile-name {
   font-family: 'IRANSansXFaNum extra-bold';
+  border-bottom: 5px solid #e2a350;
 }
 
 /* FAQ */
