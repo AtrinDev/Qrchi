@@ -18,15 +18,17 @@
         <!-- Header -->
 
         <section id="nav" class="sticky top-0 z-10">
-            <section class="max-w-7xl mx-auto py-4 flex justify-between items-center max-[1280px]:mx-8">
-                <a href="index.html"><img src="./assets/images/Qr-Chi.png" class="w-16"></a>
-                <button id="hamburger-menu"
-                    class="text-3xl sm:hidden text-grayScale-900 focus:outline-none cursor-pointer relative w-8 h-8 nav-links open-menu">
-                    <!-- &#9776; -->
-                    <div
-                        class="bg-gray-900 w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-gray-900 before:w-8 before:h-1 before:rounded before:absolute before:translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-gray-900 after:w-8 after:h-1 after:rounded after:absolute after:translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
-                    </div>
-                </button>
+            <section class="max-w-7xl mx-auto py-2 flex justify-between items-center max-[1280px]:mx-8">
+                <div class="max-[640px]:flex flex-row-reverse justify-between items-center max-[640px]:w-full">
+                    <a href="index.html"><img src="./assets/images/Qr-Chi.png" class="w-16"></a>
+                    <button id="hamburger-menu"
+                        class="text-3xl sm:hidden text-grayScale-900 focus:outline-none cursor-pointer relative w-8 h-8 nav-links open-menu">
+                        <!-- &#9776; -->
+                        <div
+                            class="bg-gray-900 w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-gray-900 before:w-8 before:h-1 before:rounded before:absolute before:translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-gray-900 after:w-8 after:h-1 after:rounded after:absolute after:translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+                        </div>
+                    </button>
+                </div>
                 <nav
                     class="hidden sm:block lg:space-x-8 sm:text-xs md:text-[13px] xl:text-lg sm:ml-10 sm:mr-4 lg:mr-18 xl:ml-72 xl:mr-20">
                     <a href="index.html"
@@ -55,7 +57,7 @@
                 <div class="sm:flex-row lg:justify-between hidden sm:block">
                     <div class="w-full h-20 flex items-center justify-center">
                         <a href="order.html"
-                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                             <span
                                 class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                             <span
@@ -74,14 +76,13 @@
             <section id="mobile-menu"
                 class="absolute top-0 bg-grayScale-0 w-full text-2xl flex-col justify-center origin-top animate-open-menu hidden">
                 <!-- <button class="text-3xl self-end px-6 text-grayScale-900">
-                &times;
-            </button> -->
+                    &times;
+                </button> -->
                 <div class="relative flex justify-center mt-24">
                     <input type="text"
                         class="rounded-3xl bg-grayScale-0 px-4 py-2 focus:outline-none focus:border-amber-600 shadow-md search mobile-search"
                         placeholder="جستجو...">
-                    <!-- <i
-                        class="fab fa-sistrix text-md ml-2 text-grayScale-700 cursor-pointer absolute top-3 left-6"></i> -->
+                    <i class="fab fa-sistrix text-md ml-2 text-grayScale-700 cursor-pointer absolute top-3 left-6"></i>
                 </div>
                 <nav class="flex flex-col min-h-screen items-center py-8 mobile-menu" aria-label="mobile">
                     <a href="index.html"
@@ -119,10 +120,12 @@
             <section class="hero-bg-2">
                 <section id="hero"
                     class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row justify-between items-center min-[900px]:gap-x-40 mb-12 max-[1240px]:mx-8">
-                    <div class="max-[1280px]:pt-[90px] max-[768px]:pt-[10px] md:mt-16 hero-info">
-                        <h1 class="text-5xl mb-10 text-primary-800">کیوآرچی</h1>
-                        <h5 class="text-2xl mb-8 text-grayScale-800">همه وقت، همه جا، همه چی</h5>
-                        <p class="text-base max-w-lg mb-10 text-justify text-grayScale-600 max-[640px]:text-sm">
+                    <div class="max-[1280px]:pt-[90px] max-[768px]:pt-[20px] md:mt-16 hero-info">
+                        <h1 class="text-5xl mb-10 text-primary-800 max-[1024px]:text-3xl">کیوآرچی</h1>
+                        <h5 class="text-2xl mb-8 text-grayScale-800 max-[1024px]:text-lg max-[768px]:-mt-4">همه وقت، همه
+                            جا، همه چی</h5>
+                        <p
+                            class="text-base max-w-lg mb-10 text-justify text-grayScale-600 max-[640px]:text-sm max-[768px]:-mt-4">
                             کیو.آر.چی
                             تجربه ای متفاوت از
                             Qr-Code را برای شما رقم می زند.
@@ -135,7 +138,7 @@
                             کاتالوگ محصولات، اطلاعات تماس و ... به راحتی در اختیار کاربران و مراجعین شما قرار بگیرد.</p>
                         <div class="flex sm:flex-row">
                             <a href="packages.html"
-                                class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                                class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                                 <span
                                     class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                                 <span
@@ -165,7 +168,9 @@
 
         <section id="services" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto my-24">
             <div class="mx-auto flex flex-col items-center relative title">
-                <h2 class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">services</h2>
+                <h2
+                    class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
+                    services</h2>
                 <h2 class="title-name text-2xl font-bold text-grayScale-800">خدمات کیوآرچی</h2>
                 <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
             </div>
@@ -218,7 +223,9 @@
 
         <section id="Packages" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto my-24">
             <div class="mx-auto flex flex-col items-center relative title">
-                <h2 class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider">packages</h2>
+                <h2
+                    class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
+                    packages</h2>
                 <h2 class="title-name text-2xl font-bold text-grayScale-800">معرفی پکیج ها</h2>
                 <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
             </div>
@@ -232,7 +239,8 @@
                             <img src="./assets/images/Crown-icon.png" alt="icon">
                         </span>
                         <p class="text-lg pb-12 text-grayScale-900">پکیج نقره ای</p>
-                        <h3 class="text-4xl max-[452px]:text-[22px] max-[452px]:-mt-7 text-grayScale-900">1.800.000 تومان</h3>
+                        <h3 class="text-4xl max-[452px]:text-[22px] max-[452px]:-mt-7 text-grayScale-900">1.800.000
+                            تومان</h3>
                     </div>
                     <div class="px-6 py-9 text-center border-b-8 rounded-2xl lower-package-1">
                         <ul class="pb-10 max-[452px]:pb-9 package-list text-grayScale-600">
@@ -243,7 +251,7 @@
                         <p class="package-info text-xs text-grayScale-800">( اینستاگرام - وبسایت - مسیریابی و... )</p>
                         <div class="w-full h-20 mt-20 max-[452px]:mt-10 flex items-center justify-center">
                             <a href="packages.html"
-                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none package-1-btn">
+                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-grayScale-200 package-1-btn">
                                 <span
                                     class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span
@@ -267,7 +275,8 @@
                             <img src="./assets/images/Crown-icon.png" alt="icon">
                         </span>
                         <p class="text-lg pb-12 text-grayScale-900">پکیج طلایی</p>
-                        <h3 class="text-4xl max-[452px]:text-[22px] max-[452px]:-mt-7 text-grayScale-900">3.600.000 تومان</h3>
+                        <h3 class="text-4xl max-[452px]:text-[22px] max-[452px]:-mt-7 text-grayScale-900">3.600.000
+                            تومان</h3>
                     </div>
                     <div class="px-4 py-9 text-center border-b-8 rounded-2xl lower-package-2">
                         <ul class="pb-10 max-[452px]:pb-9 package-list text-grayScale-600">
@@ -280,7 +289,7 @@
                             راهنما - محصولات - خدمات و... )</p>
                         <div class="w-full h-20 mt-20 max-[452px]:mt-10 flex items-center justify-center">
                             <a href="packages.html"
-                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                                 <span
                                     class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span
@@ -304,7 +313,8 @@
                             <img src="./assets/images/Crown-icon.png" alt="icon">
                         </span>
                         <p class="text-lg pb-12 text-grayScale-900">پکیج پلاتینیومی</p>
-                        <h3 class="text-4xl max-[452px]:text-[22px] max-[452px]:-mt-7 text-grayScale-900">5.200.000 تومان</h3>
+                        <h3 class="text-4xl max-[452px]:text-[22px] max-[452px]:-mt-7 text-grayScale-900">5.200.000
+                            تومان</h3>
                     </div>
                     <div class="px-7 pt-9 pb-6 text-center border-b-8 rounded-2xl lower-package-3">
                         <ul class="pb-10 package-list text-grayScale-600">
@@ -318,7 +328,7 @@
                             خدمات - محصولات - دستورالعمل <br /> و... )</p>
                         <div class="w-full h-20 mt-9 flex items-center justify-center">
                             <a href="packages.html"
-                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none package-3-btn">
+                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-[#C2E1F3] package-3-btn">
                                 <span
                                     class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span
@@ -343,73 +353,101 @@
 
         <section id="profiles" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-36 mb-24">
             <div class="mx-auto flex flex-col items-center relative title">
-                <h2 class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider">profiles</h2>
+                <h2
+                    class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
+                    profiles</h2>
                 <h2 class="title-name text-2xl font-bold text-grayScale-800">نمونه پروفایل ها</h2>
                 <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
             </div>
             <section class="mt-16 pb-8 flex flex-col sm:flex-row justify-between items-center swiper">
-                <div id="arrow-backward" class="text-5xl swiper-button-prev bg-secondary-500 text-grayScale-0 p-8 rounded-[15px]"></div>
-                <div id="arrow-forward" class="text-5xl swiper-button-next bg-secondary-500 text-grayScale-0 p-8 rounded-[15px]"></div>
+                <div id="arrow-backward"
+                    class="text-5xl swiper-button-prev bg-secondary-500 text-grayScale-0 p-8 rounded-[15px]"></div>
+                <div id="arrow-forward"
+                    class="text-5xl swiper-button-next bg-secondary-500 text-grayScale-0 p-8 rounded-[15px]"></div>
                 <div class="swiper-wrapper pt-2">
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/1.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">های لیزر</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            های لیزر</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/2.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر واحدیان</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر واحدیان</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/3.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر حسینی</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر حسینی</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/4.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر مهرافروز</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر مهرافروز</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/5.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر چعباوی زاده</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر چعباوی زاده</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/6.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر فرید عطار</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر فرید عطار</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/7.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر سهیل</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر سهیل</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/8.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر حدادی</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر حدادی</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/9.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر شیروانی</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر شیروانی</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/10.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر فرخ کامران</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر فرخ کامران</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/11.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر فرشته عبدالمطلبی</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر فرشته عبدالمطلبی</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/12.png" alt="profile"
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
-                        <h5 class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">دکتر علی الستی</h5>
+                        <h5
+                            class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                            دکتر علی الستی</h5>
                     </div>
                 </div>
             </section>
@@ -421,7 +459,9 @@
 
         <section id="faq" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto my-24">
             <div class="mx-auto flex flex-col items-center relative title">
-                <h2 class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider">faq</h2>
+                <h2
+                    class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
+                    faq</h2>
                 <h2 class="title-name text-2xl font-bold text-grayScale-800">سوالات متداول</h2>
                 <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
             </div>
@@ -499,7 +539,7 @@
                     </p>
                     <div class="w-full h-20 flex items-center">
                         <a href="order.html"
-                            class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                            class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                             <span
                                 class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                             <span
@@ -527,7 +567,9 @@
 
         <section id="blogs" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-24 mb-14">
             <div class="mx-auto flex flex-col items-center relative title">
-                <h2 class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider">blogs</h2>
+                <h2
+                    class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
+                    blogs</h2>
                 <h2 class="title-name text-2xl font-bold text-grayScale-800">آخرین مقالات</h2>
                 <div class="my-4 rounded-md bg-secondary-400 title-underline"></div>
             </div>
@@ -608,7 +650,7 @@
             </section>
             <div class="w-full h-20 flex justify-center items-center mt-16">
                 <a href="blogs.html"
-                    class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none bg-secondary-500 btn">
+                    class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                     <span
                         class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
                     <span

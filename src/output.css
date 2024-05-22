@@ -76136,6 +76136,10 @@ video {
 }
 
 .title-bg {
+  background: linear-gradient(to bottom,rgba(226,163,80,1), rgba(226, 163, 80, 0.25));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ----------Home---------- */
@@ -76191,38 +76195,42 @@ video {
 
 @keyframes hero {
   0% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 
   50% {
-    transform: rotate(22deg);
-    -webkit-transform: rotate(22deg);
-    -moz-transform: rotate(22deg);
-    -ms-transform: rotate(22deg);
-    -o-transform: rotate(22deg);
+    transform: translateX(80px);
+    -webkit-transform: translateX(80px);
+    -moz-transform: translateX(80px);
+    -ms-transform: translateX(80px);
+    -o-transform: translateX(80px);
   }
 
   100% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 }
 
 .navbar-fixed {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .mobile-menu {
@@ -76233,6 +76241,16 @@ video {
   font-family: 'IRANSansXFaNum regular';
   border-left: 7px solid #E2A350;
   border-right: 7px solid #E2A350;
+}
+
+.search::-moz-placeholder {
+  font-size: 15px;
+  color: #d3d3d3;
+}
+
+.search::placeholder {
+  font-size: 15px;
+  color: #d3d3d3;
 }
 
 .mobile-search::-moz-placeholder {
