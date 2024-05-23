@@ -41,18 +41,6 @@ module.exports = {
         900: "#1A1A1A",
       },
     },
-    extend: {
-      keyframes: {
-        openMenu: {
-          "0%": { transform: "scaleX(0)" },
-          "80%": { transform: "scaleX(1.2)" },
-          "100%": { transform: "scaleX(1)" },
-        },
-      },
-      animation: {
-        "open-menu": "openMenu 0.5s ease-in-out forwards",
-      },
-    },
   },
   plugins: [],
   safelist: [
