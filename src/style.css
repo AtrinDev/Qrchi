@@ -88,6 +88,16 @@
     -webkit-text-fill-color: transparent;
 }
 
+.navbar-bg {
+    background: url('../assets/images/Navbar-Bg.png') 83% top no-repeat;
+}
+
+@media screen and (max-width:640px) {
+    .navbar-bg {
+        background: unset;
+    }
+}
+
 /* ----------Home---------- */
 
 /* Header */
@@ -200,7 +210,8 @@
  .open-menu {
     animation: openMenu 0.5s ease-in-out forwards;
     -webkit-animation: openMenu 0.5s ease-in-out forwards;
-} 
+}
+ 
 
 @keyframes openMenu {
     0% {
@@ -217,11 +228,6 @@
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
 }
-}
-
-.close-menu {
-    animation: openMenu 0.5s ease-in-out backwards;
-    -webkit-animation: openMenu 0.5s ease-in-out backwards;
 }
 
 /* Services */
@@ -462,16 +468,6 @@
 
 
 /* ----------Packages---------- */
-
-.navbar-bg {
-    background: url('../assets/images/Navbar-Bg.png') 83% top no-repeat;
-}
-
-@media screen and (max-width:640px) {
-    .navbar-bg {
-        background: unset;
-    }
-}
 
 .page-title-h3 {
     font-family: 'IRANSansXFaNum black';

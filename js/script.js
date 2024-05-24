@@ -51,12 +51,11 @@ const initApp = () => {
   const closeBtn = document.getElementById("hamburger-menu-close");
   const mobileMenu = document.getElementById("mobile-menu");
 
-
   const toggleMenu = () => {
     mobileMenu.classList.toggle("hidden");
     mobileMenu.classList.toggle("flex");
-    hamburgerBtn.classList.add("toggle-btn");
-    closeBtn.classList.remove("toggle-btn");
+    // hamburgerBtn.classList.add("toggle-btn");
+    // closeBtn.classList.remove("toggle-btn");
   };
 
   hamburgerBtn.addEventListener("click", toggleMenu);

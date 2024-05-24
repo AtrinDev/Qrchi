@@ -14,7 +14,7 @@
 
     <!-- Header -->
 
-    <header id="nav" class="sticky top-0 z-10 sm:h-40 navbar-bg">
+    <header id="nav" class="max-sm:sticky top-0 z-10 sm:h-40 navbar-bg">
         <section class="max-w-7xl mx-auto py-2 flex justify-between items-center max-[1280px]:mx-8">
             <div id="mobile-nav"
                 class="max-[640px]:flex flex-row-reverse justify-between items-center max-[640px]:w-full">
@@ -29,19 +29,17 @@
             </div>
             <nav
                 class="hidden sm:block lg:space-x-8 sm:text-xs md:text-[13px] xl:text-lg sm:ml-10 sm:mr-4 lg:mr-18 xl:ml-72 xl:mr-20">
-                <a href="index.html"
-                    class="text-grayScale-700 hover:text-gray-500 sm:pl-3 lg:pl-8 nav-links">
+                <a href="index.html" class="text-grayScale-700 hover:text-gray-500 sm:pl-3 lg:pl-8 nav-links">
                     خانه
                 </a>
-                <a href="packages.html"
-                    class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
+                <a href="packages.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
                     پکیج ها
                 </a>
-                <a href="profiles.html"
-                    class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
+                <a href="profiles.html" class="text-grayScale-700 hover:text-gray-500 sm:px-1 lg:px-[5px] nav-links">
                     نمونه پروفایل ها
                 </a>
-                <a href="blogs.html" class="text-grayScale-700 hover:text-gray-500 font-black sm:px-1 lg:px-[5px] nav-links">
+                <a href="blogs.html"
+                    class="text-grayScale-700 hover:text-gray-500 font-black sm:px-1 lg:px-[5px] nav-links">
                     مقالات
                 </a>
             </nav>
@@ -72,14 +70,13 @@
             </div>
         </section>
         <section id="mobile-menu"
-            class="absolute top-0 bg-grayScale-0 max-w-lg w-full min-h-screen text-2xl flex-col justify-center hidden origin-top z-20 open-menu close-menu">
-            <button id="hamburger-menu-close"
-                class="text-5xl self-end px-6 text-grayScale-900 absolute top-3 right-1">
+            class="absolute top-0 bg-grayScale-0 w-full min-h-screen text-2xl flex-col justify-center hidden origin-top z-20 open-menu">
+            <button id="hamburger-menu-close" class="text-5xl self-end px-6 text-grayScale-900 absolute top-3 right-1">
                 &times;
             </button>
             <div class="relative flex justify-center mt-24">
                 <input type="text"
-                    class="rounded-3xl bg-grayScale-0 px-6 py-2 focus:outline-none focus:border-amber-600 shadow-md search mobile-search"
+                    class="rounded-3xl bg-grayScale-0 w-full mx-6 px-6 py-2 focus:outline-none focus:border-amber-600 shadow-md search mobile-search"
                     placeholder="جستجو...">
                 <i class="fab fa-sistrix text-md ml-2 text-grayScale-700 cursor-pointer absolute top-3 left-10"></i>
             </div>
@@ -91,8 +88,7 @@
                 </span>
                 <span class="flex flex-row items-center gap-4">
                     <i class="fas fa-box text-primary-400 text-xl"></i>
-                    <a href="packages.html"
-                        class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">پکیج
+                    <a href="packages.html" class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">پکیج
                         ها</a>
                 </span>
                 <span class="flex flex-row items-center gap-4">
@@ -127,9 +123,9 @@
             </nav>
         </section>
     </header>
-    <section class="flex justify-center items-center">
+    <section class="flex justify-center items-center max-sm:mt-12">
         <div id="flex flex-col justify-center items-center mt-8">
-            <h3 class="text-4xl text-primary-400 text-center page-title-h3">مقالات</h3>
+            <h3 class="text-2xl sm:text-4xl text-primary-400 text-center page-title-h3">مقالات</h3>
             <p class="text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html"
                     class="text-primary-800">خانه</a> / مقالات</p>
         </div>
@@ -138,7 +134,7 @@
 
     <!-- Blogs -->
 
-    <section id="blogs" class="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto mt-24 mb-14">
+    <section id="blogs" class="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto mt-24 max-sm:mt-12 mb-14">
         <section
             class="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-[960px]:mx-8 mx-auto gap-6">
             <div
@@ -352,9 +348,13 @@
 
     <!-- Blur Bgs -->
 
-    <div class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[35%] right-[-10%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]"></div>
-    <div class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[20%] left-[8%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]"></div>
-    
+    <div
+        class="w-[403px] h-[543px] bg-secondary-500/10 rounded-full absolute -z-10 top-[35%] right-[-10%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]">
+    </div>
+    <div
+        class="w-[286px] h-[488px] bg-secondary-500/10 rounded-full absolute -z-10 top-[20%] left-[8%] blur-3xl max-[605px]:w-[100px] max-[348px]:w-[50px]">
+    </div>
+
     <!-- End of Blur Bgs -->
 
 
