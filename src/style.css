@@ -211,7 +211,6 @@
     animation: openMenu 0.5s ease-in-out forwards;
     -webkit-animation: openMenu 0.5s ease-in-out forwards;
 }
- 
 
 @keyframes openMenu {
     0% {
