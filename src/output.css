@@ -76129,12 +76129,6 @@ video {
   /* color: #333333; */
 }
 
-.title-underline {
-  width: 75px;
-  height: 6px;
-  /* background-color: #E9BC49; */
-}
-
 .title-bg {
   background: linear-gradient(to bottom,rgba(226,163,80,1), rgba(226, 163, 80, 0.25));
   -webkit-background-clip: text;
@@ -76231,8 +76225,8 @@ video {
 
 .navbar-fixed {
   background-color: rgba(255, 255, 255, 0.7);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   position: fixed;
   top: 0;
   left: 0;
@@ -76396,6 +76390,16 @@ video {
 .profile-name {
   font-family: 'IRANSansXFaNum extra-bold';
   border-bottom: 5px solid #e2a350;
+}
+
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.swiper-button-next::after {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* FAQ */

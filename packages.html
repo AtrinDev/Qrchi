@@ -14,7 +14,8 @@
 
     <!-- Header -->
 
-    <header id="nav" class="max-sm:sticky top-0 z-10 sm:h-40 navbar-bg">
+    <section class="navbar-bg h-40"></section>
+    <section id="nav" class="sticky top-0 z-10 -mt-40">
         <section class="max-w-7xl mx-auto py-2 flex justify-between items-center max-[1280px]:mx-8">
             <div id="mobile-nav"
                 class="max-[640px]:flex flex-row-reverse justify-between items-center max-[640px]:w-full">
@@ -69,66 +70,73 @@
                 </div>
             </div>
         </section>
-        <section id="mobile-menu"
-            class="absolute top-0 bg-grayScale-0 w-full min-h-screen text-2xl flex-col justify-center hidden origin-top z-20 open-menu">
-            <button id="hamburger-menu-close" class="text-5xl self-end px-6 text-grayScale-900 absolute top-3 right-1">
-                &times;
-            </button>
-            <div class="relative flex justify-center mt-24">
-                <input type="text"
-                    class="rounded-3xl bg-grayScale-0 w-full mx-6 px-6 py-2 focus:outline-none focus:border-amber-600 shadow-md search mobile-search"
-                    placeholder="جستجو...">
-                <i class="fab fa-sistrix text-md ml-2 text-grayScale-700 cursor-pointer absolute top-3 left-10"></i>
-            </div>
-            <nav class="flex flex-col items-start pr-6 py-8 mobile-menu" aria-label="mobile">
-                <span class="flex flex-row items-center gap-4">
-                    <i class="fas fa-house-user text-primary-400 text-xl"></i>
-                    <a href="index.html"
-                        class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">خانه</a>
-                </span>
-                <span class="flex flex-row items-center gap-4">
-                    <i class="fas fa-box text-primary-400 text-xl"></i>
-                    <a href="packages.html" class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">پکیج
-                        ها</a>
-                </span>
-                <span class="flex flex-row items-center gap-4">
-                    <i class="fas fa-user text-primary-400 text-xl"></i>
-                    <a href="profiles.html"
-                        class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">نمونه
-                        پروفایل ها</a>
-                </span>
-                <span class="flex flex-row items-center gap-4">
-                    <i class="fas fa-list text-primary-400 text-xl"></i>
-                    <a href="blogs.html"
-                        class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">مقالات</a>
-                </span>
-                <div class="flex sm:flex-row lg:justify-between">
-                    <div class="w-full h-20 flex items-center justify-center">
-                        <a href="order.html"
-                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
-                            <span
-                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                            <span
-                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                            <span class="relative z-20 flex items-center text-sm">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z">
-                                </path>
-                                </svg>
-                                ثبت سفارش
-                            </span>
-                        </a>
-                    </div>
+    </section>
+    <header>
+            <section id="mobile-menu"
+                class="absolute top-0 bg-grayScale-0 w-full min-h-screen text-2xl flex-col hidden origin-top z-20 open-menu">
+                <button id="hamburger-menu-close" class="text-5xl self-end px-6 text-grayScale-900 absolute top-3 right-1">
+                    &times;
+                </button>
+                <div class="relative flex justify-center mt-24">
+                    <input type="text"
+                        class="rounded-3xl bg-grayScale-0 w-full mx-6 px-6 py-2 focus:outline-none focus:border-amber-600 shadow-md search mobile-search"
+                        placeholder="جستجو...">
+                    <i class="fab fa-sistrix text-md ml-2 text-grayScale-700 cursor-pointer absolute top-3 left-10"></i>
                 </div>
-            </nav>
-        </section>
+                <nav class="flex flex-col items-start pr-6 py-8 mobile-menu" aria-label="mobile">
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-house-user text-primary-400 text-xl"></i>
+                        <a href="index.html"
+                            class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">خانه</a>
+                    </span>
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-box text-primary-400 text-xl"></i>
+                        <a href="packages.html" class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">پکیج
+                            ها</a>
+                    </span>
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-user text-primary-400 text-xl"></i>
+                        <a href="profiles.html"
+                            class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">نمونه
+                            پروفایل ها</a>
+                    </span>
+                    <span class="flex flex-row items-center gap-4">
+                        <i class="fas fa-list text-primary-400 text-xl"></i>
+                        <a href="blogs.html"
+                            class="text-center text-lg py-4 text-grayScale-700 hover:text-gray-500">مقالات</a>
+                    </span>
+                    <div class="flex sm:flex-row lg:justify-between">
+                        <div class="w-full h-20 flex items-center justify-center">
+                            <a href="order.html"
+                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
+                                <span
+                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                <span
+                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                <span class="relative z-20 flex items-center text-sm">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z">
+                                    </path>
+                                    </svg>
+                                    ثبت سفارش
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </section>
     </header>
-    <section class="flex justify-center items-center max-sm:mt-12">
-        <div id="flex flex-col justify-center items-center mt-8">
-            <h3 class="text-2xl sm:text-4xl text-primary-400 text-center page-title-h3">پکیج ها</h3>
-            <p class="text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html"
-                    class="text-primary-800">خانه</a> / پکیج ها</p>
-        </div>
+    <section class="flex justify-center items-center max-sm:mt-12 sm:mt-28">
+            <div id="flex flex-col justify-center items-center mt-8">
+                <div class="mx-auto flex flex-col items-center relative title">
+                    <h2
+                        class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
+                        Packages</h2>
+                </div>        
+                <h3 class="text-2xl sm:text-4xl text-primary-400 text-center page-title-h3">پکیج ها</h3>
+                <p class="text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html"
+                        class="text-primary-800">خانه</a> / پکیج ها</p>
+            </div>
     </section>
 
     <!-- End of Header -->
@@ -275,14 +283,14 @@
                         ارتباط با ما
                     </h5>
                     <span class="flex flex-row justify-center items-center gap-6">
-                        <span class="w-11 h-11 bg-grayScale-700 rounded-full flex justify-center items-center">
-                            <i class="fas fa-mobile text-grayScale-0"></i>
+                        <span class="w-11 h-11 bg-secondary-500 rounded-full flex justify-center items-center">
+                            <i class="fas fa-phone text-grayScale-0"></i>
                         </span>
                         <p class="text-grayScale-700 text-lg">09338365886</p>
                     </span>
                     <span class="flex flex-row justify-start items-center gap-6">
-                        <span class="w-11 h-11 bg-grayScale-700 rounded-full flex justify-center items-center">
-                            <i class="fab fa-instagram-square text-grayScale-0"></i>
+                        <span class="w-11 h-11 bg-secondary-500 rounded-full flex justify-center items-center">
+                            <i class="fab fa-instagram text-grayScale-0"></i>
                         </span>
                         <p class="text-grayScale-700 text-lg"><a href="https://www.instagram.com/qr.chi">qr.chi@</a></p>
                     </span>

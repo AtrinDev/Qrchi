@@ -14,7 +14,8 @@
 
     <!-- Header -->
 
-    <header id="nav" class="max-sm:sticky top-0 z-10 sm:h-40 navbar-bg">
+    <section class="navbar-bg h-40"></section>
+    <section id="nav" class="sticky top-0 z-10 -mt-40">
         <section class="max-w-7xl mx-auto py-2 flex justify-between items-center max-[1280px]:mx-8">
             <div id="mobile-nav"
                 class="max-[640px]:flex flex-row-reverse justify-between items-center max-[640px]:w-full">
@@ -69,8 +70,10 @@
                 </div>
             </div>
         </section>
+    </section>
+    <header>
         <section id="mobile-menu"
-            class="absolute top-0 bg-grayScale-0 w-full min-h-screen text-2xl flex-col justify-center hidden origin-top z-20 open-menu">
+            class="absolute top-0 bg-grayScale-0 w-full min-h-screen text-2xl flex-col hidden origin-top z-20 open-menu">
             <button id="hamburger-menu-close" class="text-5xl self-end px-6 text-grayScale-900 absolute top-3 right-1">
                 &times;
             </button>
@@ -123,8 +126,13 @@
             </nav>
         </section>
     </header>
-    <section class="flex justify-center items-center max-sm:mt-12">
+    <section class="flex justify-center items-center max-sm:mt-12 sm:mt-28">
         <div id="flex flex-col justify-center items-center mt-8">
+            <div class="mx-auto flex flex-col items-center relative title">
+                <h2
+                    class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
+                    Profiles</h2>
+            </div> 
             <h3 class="text-2xl sm:text-4xl text-primary-400 text-center page-title-h3">نمونه پروفایل ها</h3>
             <p class="text-xl text-grayScale-800 text-center page-title-p mt-6"><a href="index.html"
                     class="text-primary-800">خانه</a> / نمونه پروفایل ها</p>
@@ -141,7 +149,7 @@
                 <img src="./assets/images/1.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     های لیزر
                 </h5>
             </div>
@@ -149,7 +157,7 @@
                 <img src="./assets/images/2.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر
                     واحدیان</h5>
             </div>
@@ -157,7 +165,7 @@
                 <img src="./assets/images/3.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر
                     حسینی</h5>
             </div>
@@ -165,7 +173,7 @@
                 <img src="./assets/images/4.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر
                     مهرافروز</h5>
             </div>
@@ -173,14 +181,14 @@
                 <img src="./assets/images/5.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر چعباوی زاده</h5>
             </div>
             <div class="flex flex-col justify-center items-center mb-16">
                 <img src="./assets/images/6.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر فرید
                     عطار</h5>
             </div>
@@ -188,7 +196,7 @@
                 <img src="./assets/images/7.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر سهیل
                 </h5>
             </div>
@@ -196,7 +204,7 @@
                 <img src="./assets/images/8.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر
                     حدادی</h5>
             </div>
@@ -204,7 +212,7 @@
                 <img src="./assets/images/9.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر
                     شیروانی</h5>
             </div>
@@ -212,7 +220,7 @@
                 <img src="./assets/images/10.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر فرخ
                     کامران</h5>
             </div>
@@ -220,14 +228,14 @@
                 <img src="./assets/images/11.png" alt="profile"
                     class="transition-all hover:scale-105 max-[640px]:w-[300px] profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر
                     فرشته عبدالمطلبی</h5>
             </div>
             <div class="flex flex-col justify-center items-center">
                 <img src="./assets/images/12.png" alt="profile" class="transition-all hover:scale-105 profile-img">
                 <h5
-                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-10 mx-auto mb-0">
+                    class="md:text-xl max-[768px]:text-base text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
                     دکتر علی
                     الستی</h5>
             </div>
@@ -257,14 +265,14 @@
                         ارتباط با ما
                     </h5>
                     <span class="flex flex-row justify-center items-center gap-6">
-                        <span class="w-11 h-11 bg-grayScale-700 rounded-full flex justify-center items-center">
-                            <i class="fas fa-mobile text-grayScale-0"></i>
+                        <span class="w-11 h-11 bg-secondary-500 rounded-full flex justify-center items-center">
+                            <i class="fas fa-phone text-grayScale-0"></i>
                         </span>
                         <p class="text-grayScale-700 text-lg">09338365886</p>
                     </span>
                     <span class="flex flex-row justify-start items-center gap-6">
-                        <span class="w-11 h-11 bg-grayScale-700 rounded-full flex justify-center items-center">
-                            <i class="fab fa-instagram-square text-grayScale-0"></i>
+                        <span class="w-11 h-11 bg-secondary-500 rounded-full flex justify-center items-center">
+                            <i class="fab fa-instagram text-grayScale-0"></i>
                         </span>
                         <p class="text-grayScale-700 text-lg"><a href="https://www.instagram.com/qr.chi">qr.chi@</a></p>
                     </span>
