@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Qrchi-qr-code-qrcode.png">
-    <link rel="stylesheet" href="fontAwesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Qrchi</title>
 </head>
 
@@ -26,7 +26,7 @@
                         class="text-3xl sm:hidden text-grayScale-900 focus:outline-none cursor-pointer relative w-8 h-8 nav-links">
                         <!-- &#9776; -->
                         <div
-                            class="bg-gray-900 w-6 h-1 rounded-full absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-gray-900 before:w-6 before:h-1 before:rounded-full before:absolute before:translate-x-3 before:-translate-y-2 after:content-[''] after:bg-gray-900 after:w-6 after:h-1 after:rounded-full after:absolute after:translate-x-3 after:translate-y-2">
+                            class="bg-grayScale-700 w-6 h-1 rounded-full absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-grayScale-700 before:w-6 before:h-1 before:rounded-full before:absolute before:translate-x-3 before:-translate-y-2 after:content-[''] after:bg-grayScale-700 after:w-6 after:h-1 after:rounded-full after:absolute after:translate-x-3 after:translate-y-2">
                         </div>
                     </button>
                 </div>
@@ -50,7 +50,7 @@
                 </nav>
                 <div class="ml-8 relative max-[950px]:hidden">
                     <input type="text"
-                        class="rounded-3xl bg-grayScale-0 px-4 py-2 hidden sm:block focus:outline-none focus:border-amber-600 shadow-md search"
+                        class="rounded-3xl bg-grayScale-0 px-4 py-2 hidden sm:block focus:outline-none focus:border-[#d97706] shadow-md search"
                         placeholder="جستجو...">
                     <i
                         class="fab fa-sistrix text-md ml-2 hidden sm:block text-grayScale-700 cursor-pointer absolute top-3 left-2"></i>
@@ -58,11 +58,11 @@
                 <div class="sm:flex-row lg:justify-between hidden sm:block">
                     <div class="w-full h-20 flex items-center justify-center">
                         <a href="order.html"
-                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
+                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-grayScale-0 transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                             <span
-                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                             <span
-                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                             <span class="relative z-20 flex items-center text-sm">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 10V3L4 14h7v7l9-11h-7z">
@@ -82,7 +82,7 @@
             </button>
             <div class="relative flex justify-center mt-24">
                 <input type="text"
-                    class="rounded-3xl bg-grayScale-0 w-full mx-6 px-6 py-2 focus:outline-none focus:border-amber-600 shadow-md search mobile-search"
+                    class="rounded-3xl bg-grayScale-0 w-full mx-6 px-6 py-2 focus:outline-none focus:border-[#d97706] shadow-md search mobile-search"
                     placeholder="جستجو...">
                 <i class="fab fa-sistrix text-md ml-2 text-grayScale-700 cursor-pointer absolute top-3 left-10"></i>
             </div>
@@ -111,12 +111,12 @@
                 <div class="flex sm:flex-row lg:justify-between">
                     <div class="w-full h-20 flex items-center justify-center">
                         <a href="order.html"
-                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
+                            class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-grayScale-0 transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                             <span
-                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                             <span
-                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
-                            <span class="relative z-20 flex items-center text-sm">
+                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
+                            <span class="relative z-20 flex items-center text-sm text-grayScale-0">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 10V3L4 14h7v7l9-11h-7z">
                                 </path>
@@ -150,11 +150,11 @@
                             کاتالوگ محصولات، اطلاعات تماس و ... به راحتی در اختیار کاربران و مراجعین شما قرار بگیرد.</p>
                         <div class="flex sm:flex-row">
                             <a href="packages.html"
-                                class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
+                                class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-grayScale-0 transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                                 <span
-                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                                 <span
-                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                                 <span class="relative flex items-center text-sm">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -163,7 +163,7 @@
                                 </span>
                             </a>
                             <a href="profiles.html"
-                                class="w-36 rounded-md mr-8 secondary-btn text-secondary-500 flex justify-center items-center transition-all hover:bg-yellow-500 hover:text-gray-50 hover:border-b-0">نمونه
+                                class="w-36 rounded-md mr-8 secondary-btn text-secondary-500 flex justify-center items-center transition-all hover:bg-[#eab308] hover:text-[white] hover:border-b-0">نمونه
                                 پروفایل ها</a>
                         </div>
                     </div>
@@ -181,7 +181,8 @@
         <section id="services" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto my-24 max-lg:my-36">
             <div class="mx-auto flex flex-col items-center relative title">
                 <h2
-                    class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">services</h2>
+                    class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
+                    services</h2>
                 <h2 class="title-name text-2xl font-bold text-grayScale-800">خدمات کیوآرچی</h2>
             </div>
             <section class="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-[920px]:mx-8">
@@ -231,7 +232,8 @@
 
         <!-- Packages -->
 
-        <section id="Packages" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-32 mb-24 max-lg:my-36">
+        <section id="Packages"
+            class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-32 mb-24 max-lg:my-36">
             <div class="mx-auto flex flex-col items-center relative title">
                 <h2
                     class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
@@ -260,11 +262,11 @@
                         <p class="package-info text-xs text-grayScale-800">( اینستاگرام - وبسایت - مسیریابی و... )</p>
                         <div class="w-full h-20 mt-20 max-[452px]:mt-10 flex items-center justify-center">
                             <a href="packages.html"
-                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-grayScale-200 package-1-btn">
+                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-grayScale-0 transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-grayScale-200 package-1-btn">
                                 <span
-                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
+                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span
-                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
+                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span class="relative z-20 flex items-center text-sm">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M13 10V3L4 14h7v7l9-11h-7z">
@@ -298,11 +300,11 @@
                             راهنما - محصولات - خدمات و... )</p>
                         <div class="w-full h-20 mt-20 max-[452px]:mt-10 flex items-center justify-center">
                             <a href="packages.html"
-                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
+                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-grayScale-0 transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                                 <span
-                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
+                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span
-                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
+                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span class="relative z-20 flex items-center text-sm">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M13 10V3L4 14h7v7l9-11h-7z">
@@ -318,7 +320,7 @@
                     class="max-[870px]:w-full sm:w-auto flex flex-col rounded-2xl backdrop-blur-xl transition-all ease-in-out hover:scale-105 max-[1280px]:mt-24 package-3">
                     <div class="text-center px-4 pt-16 pb-9 rounded-t-2xl upper-package upper-package-3">
                         <span
-                            class="w-20 h-20 bg-[#91CCEE] rounded-full flex justify-center items-center shadow-xl absolute -top-10 left-[150px] max-[640px]:left-[40%]">
+                            class="w-20 h-20 bg-[#8197AB] rounded-full flex justify-center items-center shadow-xl absolute -top-10 left-[150px] max-[640px]:left-[40%]">
                             <img src="./assets/images/Crown-icon.png" alt="icon">
                         </span>
                         <p class="text-lg pb-12 text-grayScale-900">پکیج پلاتینیومی</p>
@@ -337,11 +339,11 @@
                             خدمات - محصولات - دستورالعمل <br /> و... )</p>
                         <div class="w-full h-20 mt-9 flex items-center justify-center">
                             <a href="packages.html"
-                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-[#C2E1F3] package-3-btn">
+                                class="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-grayScale-0 transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-[#b1bfcd] package-3-btn">
                                 <span
-                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
+                                    class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span
-                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0 p-span"></span>
+                                    class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0 p-span"></span>
                                 <span class="relative z-20 flex items-center text-sm">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M13 10V3L4 14h7v7l9-11h-7z">
@@ -371,8 +373,8 @@
             <section class="mt-16 pb-8 flex flex-col sm:flex-row justify-between items-center swiper">
                 <div id="arrow-backward"
                     class="swiper-button-prev bg-secondary-500 text-grayScale-0 p-8 rounded-[15px]"></div>
-                <div id="arrow-forward"
-                    class="swiper-button-next bg-secondary-500 text-grayScale-0 p-8 rounded-[15px]"></div>
+                <div id="arrow-forward" class="swiper-button-next bg-secondary-500 text-grayScale-0 p-8 rounded-[15px]">
+                </div>
                 <div class="swiper-wrapper pt-2">
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/1.png" alt="profile"
@@ -442,7 +444,7 @@
                             class="transition-all hover:scale-105 max-[1024px]:w-[214px] profile-img">
                         <h5
                             class="text-center text-grayScale-800 profile-name bg-grayScale-0 p-4 rounded-[10px] w-3/4 text-base shadow-lg mt-7 mx-auto mb-0">
-                            دکتر فرخ کامران</h5>
+                            دکتر کامران خواجوی</h5>
                     </div>
                     <div class="flex flex-col justify-center items-center swiper-slide">
                         <img src="./assets/images/11.png" alt="profile"
@@ -466,7 +468,8 @@
 
         <!-- FAQ -->
 
-        <section id="faq" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto my-24 max-lg:my-36 max-md:mb-16">
+        <section id="faq"
+            class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto my-24 max-lg:my-36 max-md:mb-16">
             <div class="mx-auto flex flex-col items-center relative title">
                 <h2
                     class="absolute text-5xl font-bold text-primary-400 opacity-15 -top-6 uppercase tracking-wider title-bg">
@@ -482,7 +485,8 @@
                             <h4 class="text-grayScale-800 faq-question">تفاوت کیوارچی و سرویس های رایگان مشابه چیه؟</h4>
                             <i class="fas fa-angle-down text-xl text-grayScale-800"></i>
                         </div>
-                        <p class="text-grayScale-600 text-justify pt-4 faq-answer collapse-item">در زمان استفاده از کیوآرکد
+                        <p class="text-grayScale-600 text-justify pt-4 faq-answer collapse-item">در زمان استفاده از
+                            کیوآرکد
                             سرویس های رایگان
                             شما با چاپ کیوآرکد و استفاده های تبلیغاتی هزینه خواهید کرد اما پس از مدتی سرویس قطع خواهد شد
                             و
@@ -499,7 +503,8 @@
                             <h4 class="text-grayScale-800 faq-question">چرا سرویس مورد نظر را از کیوارچی‌ تهیه کنم؟</h4>
                             <i class="fas fa-angle-down text-xl text-grayScale-800"></i>
                         </div>
-                        <p class="text-grayScale-600 text-justify pt-4 faq-answer hidden collapse-item">دپارتمان کیوارچی با
+                        <p class="text-grayScale-600 text-justify pt-4 faq-answer hidden collapse-item">دپارتمان کیوارچی
+                            با
                             پشتوانه ی هولدینگ فعال در
                             حوزه های آنلاین در همه ی زمینه‌های طراحی گرافیکی و برنامه نویسی با بیش از پانزده سال سابقه
                             در
@@ -529,7 +534,8 @@
         <!-- Order -->
 
         <section id="order" class="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mt-32 max-md:mt-0 mb-24">
-            <section class="mt-16 flex max-[920px]:flex-col max-md:flex-col-reverse md:flex-row max-[920px]:mx-8 justify-between items-center">
+            <section
+                class="mt-16 flex max-[920px]:flex-col max-md:flex-col-reverse md:flex-row max-[920px]:mx-8 justify-between items-center">
                 <div class="flex flex-col text-justify order-info max-[920px]:w-[300px] max-md:mt-20">
                     <h2 class="text-grayScale-800 text-3xl mb-6 max-[920px]:text-2xl">کیو آر چی ویترین مجازی شما</h2>
                     <p class="text-grayScale-600 text-base max-[920px]:text-sm">کیوآرکد اختصاصی این امکان را برای شما
@@ -547,11 +553,11 @@
                     </p>
                     <div class="w-full h-20 flex items-center">
                         <a href="order.html"
-                            class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
+                            class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-grayScale-0 transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                             <span
-                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                             <span
-                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                                class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                             <span class="relative flex items-center text-sm">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 10V3L4 14h7v7l9-11h-7z">
@@ -658,11 +664,11 @@
             </section>
             <div class="w-full h-20 flex justify-center items-center mt-16">
                 <a href="blogs.html"
-                    class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
+                    class="box-border relative inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-grayScale-0 transition-all duration-300 rounded-md cursor-pointer group focus:outline-none border-2 border-secondary-200 bg-secondary-500 btn">
                     <span
-                        class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                        class="absolute bottom-0 right-0 w-8 h-20 -mb-8 -mr-5 transition-all duration-300 ease-out transform rotate-45 translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                     <span
-                        class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-white opacity-50 group-hover:translate-x-0"></span>
+                        class="absolute top-0 left-0 w-20 h-8 -mt-1 -ml-12 transition-all duration-300 ease-out transform -rotate-45 -translate-x-1 bg-grayScale-0 opacity-50 group-hover:translate-x-0"></span>
                     <span class="relative flex items-center text-sm">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 10V3L4 14h7v7l9-11h-7z">
@@ -768,10 +774,9 @@
 
     </main>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/jquery-3.6.1.slim.js"></script>
+    <script src="./assets/js/jquery-3.6.1.slim.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
