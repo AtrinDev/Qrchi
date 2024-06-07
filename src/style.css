@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -77251,18 +77251,15 @@ video {
 
 .btn {
   font-family: 'IRANSansXFaNum light';
-  /* background-color: #EBC156; */
 }
 
 .secondary-btn {
   font-family: 'IRANSansXFaNum light';
-  /* color: #EBC156; */
   border-bottom: 3px solid #EBC156;
 }
 
 .title-name {
   font-family: 'IRANSansXFaNum extra-bold';
-  /* color: #333333; */
 }
 
 .title-bg {
@@ -77280,6 +77277,26 @@ video {
   .navbar-bg {
     background: unset;
   }
+}
+
+/* preloader */
+
+.preloader {
+  position: fixed;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hidePreloader {
+  display: none;
 }
 
 /* ----------Home---------- */
@@ -77307,18 +77324,15 @@ video {
 
 .hero-info h1 {
   font-family: 'IRANSansXFaNum black';
-  /* color: #57380F; */
 }
 
 .hero-info h5 {
   font-family: 'IRANSansXFaNum bold';
-  /* color: #333333; */
 }
 
 .hero-info p {
   font-family: 'IRANSansXFaNum regular';
   line-height: 32px;
-  /* color: #666666; */
 }
 
 .hero-img {
@@ -77431,13 +77445,11 @@ video {
 
 .service-title {
   font-family: 'IRANSansXFaNum bold';
-  /* color: #333333; */
 }
 
 .service-desc {
   font-family: 'IRANSansXFaNum medium';
   line-height: 24px!important;
-  /* color: #464646; */
 }
 
 /* Packages */
@@ -77480,12 +77492,10 @@ video {
 
 .upper-package p {
   font-family: 'IRANSansXFaNum black';
-  /* color: #464646; */
 }
 
 .upper-package h3 {
   font-family: 'IRANSansXFaNum black';
-  /* color: #464646; */
 }
 
 .lower-package-1 {
@@ -77512,12 +77522,10 @@ video {
 
 .package-list {
   font-family: 'IRANSansXFaNum regular';
-  /* color: #666666; */
 }
 
 .package-info {
   font-family: 'IRANSansXFaNum demi-bold';
-  /* color: #464646; */
 }
 
 /* Profiles */
@@ -77842,36 +77850,6 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.focus\:border-secondary-700:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(137 103 16 / var(--tw-border-opacity));
-}
-
-.focus\:border-\[red\]:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 0 0 / var(--tw-border-opacity));
-}
-
-.focus\:border-primary-800:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(87 56 15 / var(--tw-border-opacity));
-}
-
-.focus\:border-primary-700:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(131 84 22 / var(--tw-border-opacity));
-}
-
-.focus\:border-secondary-500:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(235 193 86 / var(--tw-border-opacity));
-}
-
-.focus\:border-secondary-600:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(182 137 22 / var(--tw-border-opacity));
 }
 
 .focus\:border-\[\#d97706\]:focus {

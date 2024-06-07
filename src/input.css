@@ -61,18 +61,15 @@
 
 .btn {
     font-family: 'IRANSansXFaNum light';
-    /* background-color: #EBC156; */
 }
 
 .secondary-btn {
     font-family: 'IRANSansXFaNum light';
-    /* color: #EBC156; */
     border-bottom: 3px solid #EBC156;
 }
 
 .title-name {
     font-family: 'IRANSansXFaNum extra-bold';
-    /* color: #333333; */
 }
 
 .title-bg {
@@ -90,6 +87,26 @@
     .navbar-bg {
         background: unset;
     }
+}
+
+/* preloader */
+
+.preloader {
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hidePreloader {
+    display: none;
 }
 
 /* ----------Home---------- */
@@ -117,18 +134,15 @@
 
 .hero-info h1 {
     font-family: 'IRANSansXFaNum black';
-    /* color: #57380F; */
 }
 
 .hero-info h5 {
     font-family: 'IRANSansXFaNum bold';
-    /* color: #333333; */
 }
 
 .hero-info p {
     font-family: 'IRANSansXFaNum regular';
     line-height: 32px;
-    /* color: #666666; */
 }
 
 .hero-img {
@@ -230,13 +244,11 @@
 
 .service-title {
     font-family: 'IRANSansXFaNum bold';
-    /* color: #333333; */
 }
 
 .service-desc {
     font-family: 'IRANSansXFaNum medium';
     line-height: 24px!important;
-    /* color: #464646; */
 }
 
 /* Packages */
@@ -277,12 +289,10 @@
 
 .upper-package p {
     font-family: 'IRANSansXFaNum black';
-    /* color: #464646; */
 }
 
 .upper-package h3 {
     font-family: 'IRANSansXFaNum black';
-    /* color: #464646; */
 }
 
 .lower-package-1 {
@@ -310,12 +320,10 @@
 
 .package-list {
     font-family: 'IRANSansXFaNum regular';
-    /* color: #666666; */
 }
 
 .package-info {
     font-family: 'IRANSansXFaNum demi-bold';
-    /* color: #464646; */
 }
 
 /* Profiles */

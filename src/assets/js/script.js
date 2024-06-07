@@ -1,3 +1,9 @@
+// Preloader
+
+window.addEventListener("load", () =>
+  document.querySelector(".preloader").classList.add("hidePreloader")
+);
+
 // Navbar Scroll
 
 const navbar = document.querySelector("#nav");
