@@ -532,3 +532,45 @@
 }
 
 /* ----------End of Blog---------- */
+
+
+/* ----------Call Btn---------- */
+
+.call-btn {
+    animation: call-btn 0.3s ease-out 1s 10;
+    -webkit-animation: call-btn 0.3s ease-out 1s 10;
+}
+
+.call-btn:hover {
+    animation: call-btn 0.3s ease-out 1s infinite;
+    -webkit-animation: call-btn 0.3s ease-out 1s infinite;
+}
+
+@keyframes call-btn {
+    0% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+    50% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+}
+    100% {
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+}
+
+
+/* ----------End of Call Btn---------- */
+
+
